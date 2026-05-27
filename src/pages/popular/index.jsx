@@ -19,11 +19,11 @@ import {
 import Section from "../../components/layout/Section";
 import Card from "../../components/ui/Card";
 
-const DangVaNhanDanPage = () => {
+const ApplicationBasisPage = () => {
   return (
     <div className="transition-shell w-full bg-bone snap-container font-body">
       {/* SECTION 1: HEADER */}
-      <Section className="items-center justify-center px-4 md:px-10 border-b-2 border-ink bg-bone">
+      <Section className="items-center justify-center pt-32 px-4 md:px-10 border-b-2 border-ink bg-bone">
         <div className="flex flex-col items-center justify-center space-y-8 max-w-5xl mx-auto w-full relative z-10">
           {/* Top Label Box */}
           <motion.div
@@ -32,19 +32,19 @@ const DangVaNhanDanPage = () => {
             className="bg-gold border-4 border-ink px-6 py-2 shadow-hard transform -rotate-1"
           >
             <span className="font-mono font-bold uppercase tracking-widest text-sm md:text-base text-ink">
-              Rule of Law & State Apparatus
+              Cơ Sở Vận Dụng
             </span>
           </motion.div>
 
           {/* Main Title Block */}
-          <div className="relative text-center">
+          <div className="relative text-center space-y-15">
             <motion.h1
               initial={{ scale: 0.9, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               transition={{ delay: 0.1, type: "spring" }}
               className="font-display font-black text-5xl md:text-8xl uppercase text-crimson leading-[0.85] tracking-tighter drop-shadow-hard"
             >
-              NHÀ NƯỚC
+              NHẬN DIỆN
             </motion.h1>
 
             <motion.h1
@@ -53,15 +53,7 @@ const DangVaNhanDanPage = () => {
               transition={{ delay: 0.2, type: "spring" }}
               className="font-display font-black text-5xl md:text-8xl uppercase text-transparent text-stroke-red leading-[0.85] tracking-tighter"
             >
-              PHÁP QUYỀN
-            </motion.h1>
-            <motion.h1
-              initial={{ scale: 0.9, opacity: 0 }}
-              animate={{ scale: 1, opacity: 1 }}
-              transition={{ delay: 0.3, type: "spring" }}
-              className="font-display font-black text-4xl md:text-6xl uppercase text-ink leading-[0.85] tracking-tighter drop-shadow-hard mt-4"
-            >
-              & BỘ MÁY
+              MÂU THUẪN
             </motion.h1>
           </div>
 
@@ -73,11 +65,11 @@ const DangVaNhanDanPage = () => {
             className="bg-white border-4 border-ink p-6 md:p-8 shadow-hard-lg max-w-2xl transform rotate-1 mt-8 relative"
           >
             <p className="font-body text-xl md:text-2xl text-ink text-center font-medium italic">
-              "Thượng tôn pháp luật, vì con người và{" "}
-              <span className="bg-gold/30 px-1 font-bold text-crimson not-italic">
-                do Nhân dân làm chủ
+              "Làm chủ thực sự hay{" "}
+              <span className="bg-crimson/10 px-1 font-bold text-crimson not-italic">
+                bị dẫn dắt?
               </span>
-              ."
+              "
             </p>
           </motion.div>
 
@@ -92,54 +84,43 @@ const DangVaNhanDanPage = () => {
         </div>
       </Section>
 
-      {/* SECTION 1: DEFINITION (Topic 0) */}
+      {/* SECTION 1: DEFINITION - CONTRADICTIONS IN YOUTH PARTICIPATION */}
       <Section className="items-center justify-center px-4 md:px-10 bg-white border-b-2 border-ink">
         <div className="max-w-screen-xl mx-auto w-full py-12">
           <h2 className="font-display text-4xl font-bold text-ink mb-8 text-center uppercase">
-            1. Khái niệm Nhà nước pháp quyền
+            1. Mâu Thuẫn Trong Vai Trò Của Thanh Niên
           </h2>
           <div className="grid md:grid-cols-2 gap-8 mb-8">
-            <div className="bg-bone border-l-4 border-crimson p-6 shadow-hard">
+            <div className="bg-crimson/10 border-l-4 border-crimson p-6 shadow-hard">
               <h3 className="font-bold text-xl uppercase mb-3 text-crimson">
-                Đặc trưng cơ bản
+                Một Mặt: Lực Lượng Xung Kích
               </h3>
               <ul className="space-y-2 text-graphite list-disc list-inside">
                 <li>
-                  <strong>Nhà nước của Nhân dân:</strong> Do Nhân dân, Vì Nhân
-                  dân.
+                  <strong>Nhiệt huyết &amp; Hăng Hái:</strong> Thanh niên mang trong mình nhiệt huyết, hăng hái xung phong.
                 </li>
                 <li>
-                  <strong>Cơ sở hoạt động:</strong> Hiến pháp và pháp luật.
+                  <strong>Không Ngại Khó Khăn:</strong> Không ngại khó khăn, có chí tiến thủ.
                 </li>
                 <li>
-                  <strong>Mục tiêu:</strong> Bảo đảm quyền con người, quyền công
-                  dân.
-                </li>
-                <li>
-                  <strong>Nguyên tắc chính trị:</strong> Dưới sự lãnh đạo của
-                  Đảng Cộng sản Việt Nam.
+                  <strong>Lực Lượng Thúc Đẩy:</strong> Là lực lượng thúc đẩy sự thay đổi tiến bộ của xã hội.
                 </li>
               </ul>
             </div>
 
             <div className="bg-ink text-bone p-6 shadow-hard flex flex-col justify-center">
               <h3 className="font-bold text-xl uppercase mb-3 text-gold">
-                Điểm khác biệt với Tư sản
+                Mặt Khác: Dễ Bị Lôi Kéo
               </h3>
               <ul className="space-y-2 list-disc list-inside marker:text-gold">
                 <li>
-                  Không có{" "}
-                  <span className="text-crimson font-bold bg-bone px-1">
-                    "Tam quyền phân lập cứng"
-                  </span>
-                  .
+                  <strong>Thiếu Thông Tin:</strong> Thiếu thông tin đầy đủ, dễ bị chi phối bởi cảm xúc.
                 </li>
                 <li>
-                  Quyền lực nhà nước là <strong>thống nhất</strong>.
+                  <strong>Ảnh Hưởng Mạng Xã Hội:</strong> Dễ bị ảnh hưởng bởi mạng xã hội, luận điệu xuyên tạc.
                 </li>
                 <li>
-                  Có sự <strong>phân công - phối hợp - kiểm soát</strong> giữa
-                  các cơ quan.
+                  <strong>Đối Tượng Lôi Kéo:</strong> Nếu không có tri thức vững vàng, rất dễ bị điều khiển bởi thế lực phản động.
                 </li>
               </ul>
             </div>
@@ -147,7 +128,7 @@ const DangVaNhanDanPage = () => {
         </div>
       </Section>
 
-      {/* SECTION 2: PRINCIPLE OF UNIFIED POWER (Topic 1) */}
+      {/* SECTION 2: MOVEMENTS - EMPOWERMENT OR INSTABILITY */}
       <Section className="items-center justify-center px-4 md:px-10 bg-paper">
         <div className="max-w-screen-xl mx-auto w-full">
           <Card
@@ -156,112 +137,91 @@ const DangVaNhanDanPage = () => {
           >
             <div className="absolute top-0 right-0 w-64 h-64 bg-crimson/5 rounded-full -translate-y-1/2 translate-x-1/2 blur-2xl"></div>
             <div className="absolute -left-10 -top-10 text-9xl font-black text-ink/5 -rotate-12 font-display pointer-events-none select-none">
-              UNIFIED
+              CHANGE
             </div>
 
             <h2 className="font-display text-4xl font-bold text-ink mb-8 border-b-2 border-ink/10 pb-4">
-              2. Nguyên tắc Quyền lực Thống nhất
+              2. Biến Động: Làm Chủ Thực Sự Hay Bất Ổn?
             </h2>
 
             <div className="grid md:grid-cols-2 gap-12 items-start">
               <div>
                 <p className="text-graphite/90 leading-relaxed text-lg mb-6 font-body">
-                  Khác với mô hình "tam quyền phân lập", Nhà nước ta hoạt động
-                  theo nguyên tắc:
-                  <span className="font-bold text-ink bg-gold/30 px-1 mx-1">
-                    Quyền lực nhà nước là thống nhất
-                  </span>
-                  , có sự phân công, phối hợp và kiểm soát giữa các cơ quan.
+                  Câu trả lời phụ thuộc vào bản chất và mục tiêu của phong trào:
                 </p>
 
                 <div className="space-y-6">
-                  <div className="bg-white p-6 border-2 border-ink shadow-hard-sm hover:shadow-hard transition-shadow">
-                    <h4 className="font-bold text-crimson mb-2 font-mono uppercase tracking-wide">
-                      a) Quyền lực thuộc về ai?
+                  <div className="bg-white p-6 border-2 border-green-600 shadow-hard-sm hover:shadow-hard transition-shadow">
+                    <h4 className="font-bold text-green-600 mb-2 font-mono uppercase tracking-wide">
+                      a) Làm Chủ Thực Sự
                     </h4>
                     <p className="text-base text-graphite/80 mb-2">
-                      Quyền lực nhà nước thuộc về Nhân dân. Nhân dân ủy quyền
-                      cho Nhà nước thông qua:
+                      Xảy ra khi biến động có:
                     </p>
                     <ul className="list-disc list-inside text-sm text-graphite/70 ml-2 space-y-1 mb-2">
-                      <li>Bầu cử Quốc hội</li>
-                      <li>Bầu cử Hội đồng nhân dân các cấp</li>
+                      <li>Sự lãnh đạo đúng đắn</li>
+                      <li>Dựa trên nền tảng dân trí cao</li>
+                      <li>Hướng tới xây dựng thiết chế dân chủ bền vững</li>
                     </ul>
                     <p className="text-sm italic font-medium text-ink">
-                      Không có cơ quan nào đứng "trên" Nhân dân.
+                      Nhân dân nhận thức được quyền kiểm soát nhà nước một cách tự giác và tổ chức.
                     </p>
                   </div>
 
-                  <div className="bg-white p-6 border-2 border-ink shadow-hard-sm hover:shadow-hard transition-shadow">
+                  <div className="bg-white p-6 border-2 border-crimson shadow-hard-sm hover:shadow-hard transition-shadow">
                     <h4 className="font-bold text-crimson mb-2 font-mono uppercase tracking-wide">
-                      b) Vì sao là thống nhất?
+                      b) Dẫn Đến Bất Ổn
                     </h4>
                     <p className="text-base text-graphite/80 mb-2">
-                      Chỉ có một quyền lực nhà nước duy nhất, không chia thành
-                      các "nhánh độc lập đối kháng".
+                      Xảy ra khi biến động:
                     </p>
-                    <p className="text-sm text-ink font-medium">
-                      Tất cả quyền lực vì lợi ích chung và quyền lợi của Nhân dân.
+                    <ul className="list-disc list-inside text-sm text-graphite/70 ml-2 space-y-1 mb-2">
+                      <li>Chỉ mang tính tự phát, bị giật dây</li>
+                      <li>Bị các thế lực bên ngoài lôi kéo</li>
+                      <li>Cực đoan hóa mất kiểm soát</li>
+                    </ul>
+                    <p className="text-sm italic font-medium text-ink">
+                      Dẫn đến "khoảng trống quyền lực", hỗn loạn, chia rẽ nội bộ.
                     </p>
                   </div>
                 </div>
               </div>
 
-              {/* DIAGRAM VISUALIZATION (Updated text labels) */}
+              {/* Impact Analysis */}
               <div className="relative py-10 mt-8 md:mt-0">
-                {/* Center Core */}
-                <div className="bg-crimson text-white p-6 rounded-full w-56 h-56 mx-auto flex flex-col items-center justify-center text-center font-bold shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] border-2 border-ink z-10 relative">
-                  <span className="font-display text-2xl leading-none mb-2">
-                    THỐNG NHẤT
-                  </span>
-                  <span className="font-mono text-xs font-normal opacity-90 px-2">
-                    Phân công • Phối hợp
-                    <br />
-                    Kiểm soát
-                  </span>
-                </div>
+                <h4 className="font-display font-bold text-crimson text-xl mb-6 uppercase">
+                  HỆ QUẢ SAU BIẾN ĐỘNG
+                </h4>
 
-                {/* Branches */}
-                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[130%] h-[130%] border-2 border-dashed border-ink/20 rounded-full animate-spin-slow pointer-events-none"></div>
+                <div className="space-y-4">
+                  {/* Political Stability */}
+                  <div className="bg-white border-l-4 border-l-orange-500 p-5 shadow-hard">
+                    <h5 className="font-bold text-orange-600 mb-2 uppercase text-sm">
+                      ➤ Ổn Định Chính Trị
+                    </h5>
+                    <p className="text-sm text-graphite/80 leading-relaxed">
+                      Hiếm có quốc gia nào đạt được ổn định ngay lập tức. Thường là giai đoạn quá độ dài với tranh giành quyền lực.
+                    </p>
+                  </div>
 
-                <div className="flex justify-between mt-12 text-center text-sm font-bold text-ink w-full">
-                  <div className="w-1/3 flex flex-col items-center group cursor-help">
-                    <div className="w-16 h-1 bg-ink mx-auto mb-4 group-hover:bg-crimson transition-colors"></div>
-                    <span className="font-display text-lg group-hover:text-crimson transition-colors">
-                      LẬP PHÁP
-                    </span>
-                    <span className="font-mono text-xs opacity-70 uppercase mt-1">
-                      Quốc hội
-                    </span>
+                  {/* Economic Development */}
+                  <div className="bg-white border-l-4 border-l-red-500 p-5 shadow-hard">
+                    <h5 className="font-bold text-red-600 mb-2 uppercase text-sm">
+                      ➤ Phát Triển Kinh Tế
+                    </h5>
+                    <p className="text-sm text-graphite/80 leading-relaxed">
+                      Đa số bị sụt giảm GDP nghiêm trọng do cơ sở hạ tầng bị phá hủy, nhà đầu tư rút vốn. Phục hồi mất hàng thập kỷ.
+                    </p>
                   </div>
-                  <div className="w-1/3 flex flex-col items-center -mt-12 group cursor-help">
-                    <div className="w-1 h-16 bg-ink mx-auto mb-4 group-hover:bg-olive transition-colors"></div>
-                    <span className="font-display text-lg text-olive group-hover:scale-110 transition-transform">
-                      TƯ PHÁP
-                    </span>
-                    <span className="font-mono text-xs opacity-70 uppercase mt-1">
-                      Tòa án & VKS
-                    </span>
-                  </div>
-                  <div className="w-1/3 flex flex-col items-center group cursor-help">
-                    <div className="w-16 h-1 bg-ink mx-auto mb-4 group-hover:bg-blue-600 transition-colors"></div>
-                    <span className="font-display text-lg text-blue-600 group-hover:scale-110 transition-transform">
-                      HÀNH PHÁP
-                    </span>
-                    <span className="font-mono text-xs opacity-70 uppercase mt-1">
-                      Chính phủ
-                    </span>
-                  </div>
-                </div>
 
-                <div className="text-center mt-8">
-                  <div className="inline-block bg-bone px-4 py-2 border border-ink text-xs font-mono">
-                    <span className="font-bold text-crimson">Phối hợp:</span> Hỗ
-                    trợ, không rời rạc <br />
-                    <span className="font-bold text-crimson">
-                      Kiểm soát:
-                    </span>{" "}
-                    Tránh lạm quyền, tiêu cực
+                  {/* Social Life */}
+                  <div className="bg-white border-l-4 border-l-purple-500 p-5 shadow-hard">
+                    <h5 className="font-bold text-purple-600 mb-2 uppercase text-sm">
+                      ➤ Đời Sống Xã Hội
+                    </h5>
+                    <p className="text-sm text-graphite/80 leading-relaxed">
+                      Tự do biểu đạt tăng nhưng vấn đề an ninh, tị nạn, thất nghiệp, rạn nứt niềm tin giữa các tầng lớp trở nên trầm trọng.
+                    </p>
                   </div>
                 </div>
               </div>
@@ -270,407 +230,168 @@ const DangVaNhanDanPage = () => {
         </div>
       </Section>
 
-      {/* SECTION 3: INFOGRAPHIC / MINDMAP (Topic 2 part 1) */}
-      <Section className="items-center justify-center px-4 md:px-10 bg-white border-y-2 border-ink">
-        <div className="max-w-screen-2xl mx-auto w-full py-16">
-          <div className="text-center mb-16">
-            <h2 className="font-display text-3xl font-bold uppercase mb-4">
-              Sơ đồ tổ chức quyền lực
-            </h2>
-            <p className="font-mono text-ink/60">
-              Mối quan hệ dọc từ Trung ương đến Địa phương
-            </p>
-          </div>
-
-          <div className="relative">
-            {/* Level 1: Quoc Hoi */}
-            <div className="flex justify-center mb-16 relative z-10">
-              <div className="border-2 border-ink bg-crimson text-bone p-6 w-64 text-center shadow-hard">
-                <h3 className="font-display text-2xl font-bold uppercase">
-                  Quốc hội
-                </h3>
-                <p className="text-xs font-mono mt-2 opacity-90">
-                  Cơ quan quyền lực cao nhất
-                </p>
-              </div>
-            </div>
-
-            {/* Connector Lines */}
-            <div className="absolute top-16 left-1/2 -translate-x-1/2 w-[80%] h-24 border-x-2 border-t-2 border-ink rounded-t-3xl -z-0"></div>
-            <div className="absolute top-16 left-1/2 -translate-x-1/2 w-[40%] h-24 border-r-2 border-ink -z-0"></div>
-
-            {/* Level 2: Tam Quyen */}
-            <div className="grid grid-cols-3 gap-8 relative z-10">
-              {/* Executive */}
-              <div className="flex flex-col items-center">
-                <div className="w-1 h-8 bg-ink mb-2"></div>
-                <div className="border-2 border-ink bg-blue-50 p-6 w-full text-center shadow-hard hover:-translate-y-1 transition-transform">
-                  <Activity className="w-8 h-8 text-blue-600 mx-auto mb-2" />
-                  <h3 className="font-display text-xl font-bold text-blue-900 uppercase">
-                    Chính phủ
-                  </h3>
-                  <p className="text-sm mt-2 text-blue-800">
-                    Cơ quan hành chính
-                  </p>
-                </div>
-                <div className="w-0.5 h-8 border-l-2 border-dashed border-ink my-2"></div>
-                <div className="border-2 border-ink bg-white p-4 w-5/6 text-center text-sm font-bold text-graphite shadow-sm">
-                  Bộ, Cơ quan ngang Bộ
-                </div>
-                <div className="w-0.5 h-4 border-l-2 border-dashed border-ink my-1"></div>
-                <div className="border-2 border-ink bg-white p-4 w-4/6 text-center text-sm font-bold text-graphite shadow-sm">
-                  UBND Các cấp
-                </div>
-              </div>
-
-              {/* Legislative Support */}
-              <div className="flex flex-col items-center">
-                <div className="w-1 h-8 bg-ink mb-2"></div>
-                <div className="border-2 border-ink bg-ember/10 p-6 w-full text-center shadow-hard hover:-translate-y-1 transition-transform">
-                  <GitGraph className="w-8 h-8 text-ember mx-auto mb-2" />
-                  <h3 className="font-display text-xl font-bold text-ember uppercase">
-                    UB Thường vụ
-                  </h3>
-                  <p className="text-sm mt-2 text-ink/70">
-                    Cơ quan thường trực
-                  </p>
-                </div>
-                <div className="w-0.5 h-8 border-l-2 border-dashed border-ink my-2"></div>
-                <div className="border-2 border-ink bg-white p-4 w-5/6 text-center text-sm font-bold text-graphite shadow-sm">
-                  Hội đồng Dân tộc
-                </div>
-                <div className="w-0.5 h-4 border-l-2 border-dashed border-ink my-1"></div>
-                <div className="border-2 border-ink bg-white p-4 w-5/6 text-center text-sm font-bold text-graphite shadow-sm">
-                  Các Ủy ban Quốc hội
-                </div>
-              </div>
-
-              {/* Judiciary */}
-              <div className="flex flex-col items-center">
-                <div className="w-1 h-8 bg-ink mb-2"></div>
-                <div className="border-2 border-ink bg-olive/10 p-6 w-full text-center shadow-hard hover:-translate-y-1 transition-transform">
-                  <ShieldAlert className="w-8 h-8 text-olive mx-auto mb-2" />
-                  <h3 className="font-display text-xl font-bold text-olive uppercase">
-                    Tòa án & VKS
-                  </h3>
-                  <p className="text-sm mt-2 text-ink/70">Cơ quan tư pháp</p>
-                </div>
-                <div className="w-0.5 h-8 border-l-2 border-dashed border-ink my-2"></div>
-                <div className="border-2 border-ink bg-white p-4 w-5/6 text-center text-sm font-bold text-graphite shadow-sm">
-                  TAND Tối cao
-                </div>
-                <div className="w-0.5 h-4 border-l-2 border-dashed border-ink my-1"></div>
-                <div className="border-2 border-ink bg-white p-4 w-5/6 text-center text-sm font-bold text-graphite shadow-sm">
-                  VKSND Tối cao
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </Section>
-
-      {/* SECTION 4: ORGANIZATIONAL STRUCTURE (Topic 2 part 2) */}
-      <Section
-        scrollable={true}
-        className="items-center justify-center px-4 md:px-10 py-10 bg-white"
-      >
-        <div className="max-w-screen-2xl mx-auto w-full pt-12 pb-24">
-          <div className="text-center space-y-3 mb-16">
-            <KineticHeading
-              align="center"
-              title="3. Phân công thực hiện quyền lực"
-              size="md"
-            />
-            <KineticSubline className="text-center max-w-3xl mx-auto">
-              Những mắt xích giữ vai trò riêng nhưng gắn kết chặt chẽ trong một
-              tổng thể quyền lực thống nhất.
-            </KineticSubline>
-          </div>
-
-          <div className="grid lg:grid-cols-3 gap-8">
-            {/* Card 1: Parliament */}
-            <Card
-              hoverEffect
-              className="border-t-8 border-t-ember p-8 flex flex-col h-full"
-            >
-              <div className="bg-ember/10 w-16 h-16 rounded-md flex items-center justify-center mb-6 font-display font-bold text-3xl text-ember border border-ember/20">
-                01
-              </div>
-              <h3 className="font-display text-3xl font-bold text-ink mb-2 uppercase">
-                Lập pháp
-              </h3>
-              <div className="text-crimson font-mono font-bold text-sm mb-6 uppercase tracking-wider">
-                QUỐC HỘI
-              </div>
-              <div className="space-y-4 text-base text-graphite/80">
-                <p>
-                  <strong>Quốc hội là:</strong>
-                </p>
-                <ul className="list-disc list-outside ml-4 marker:text-ember space-y-1">
-                  <li>Cơ quan đại biểu cao nhất của Nhân dân.</li>
-                  <li>Cơ quan quyền lực nhà nước cao nhất.</li>
-                </ul>
-                <p>
-                  <strong>Chức năng chính:</strong>
-                </p>
-                <ul className="list-disc list-outside ml-4 marker:text-ember space-y-1">
-                  <li>Làm Hiến pháp, sửa đổi Hiến pháp.</li>
-                  <li>Ban hành luật, nghị quyết.</li>
-                  <li>
-                    Quyết định vấn đề kinh tế - xã hội, an ninh - quốc phòng.
-                  </li>
-                  <li>Giám sát tối cao (Chính phủ, Tòa án, VKS).</li>
-                </ul>
-                <p className="text-sm italic text-ink/70 mt-2">
-                  Ví dụ: Bỏ phiếu tín nhiệm đối với Thủ tướng, Bộ trưởng.
-                </p>
-              </div>
-            </Card>
-
-            {/* Card 2: Government */}
-            <Card
-              hoverEffect
-              className="border-t-8 border-t-blue-500 p-8 flex flex-col h-full"
-            >
-              <div className="bg-blue-50 w-16 h-16 rounded-md flex items-center justify-center mb-6 font-display font-bold text-3xl text-blue-500 border border-blue-200">
-                02
-              </div>
-              <h3 className="font-display text-3xl font-bold text-ink mb-2 uppercase">
-                Hành pháp
-              </h3>
-              <div className="text-blue-600 font-mono font-bold text-sm mb-6 uppercase tracking-wider">
-                CHÍNH PHỦ & UBND
-              </div>
-              <div className="space-y-4 text-base text-graphite/80">
-                <p>
-                  <strong>Chính phủ là:</strong>
-                </p>
-                <ul className="list-disc list-outside ml-4 marker:text-blue-500 space-y-1">
-                  <li>Cơ quan hành chính nhà nước cao nhất.</li>
-                  <li>Cơ quan thực hiện quyền hành pháp.</li>
-                </ul>
-                <p>
-                  <strong>Nhiệm vụ:</strong>
-                </p>
-                <ul className="list-disc list-outside ml-4 marker:text-blue-500 space-y-1">
-                  <li>Tổ chức thi hành Hiến pháp và luật.</li>
-                  <li>Quản lý kinh tế, văn hóa, giáo dục, y tế, ANQP...</li>
-                </ul>
-                <p className="text-sm italic text-ink/70 mt-2">
-                  Ví dụ: Ban hành Nghị định hướng dẫn luật, triển khai chính
-                  sách.
-                </p>
-              </div>
-            </Card>
-
-            {/* Card 3: Judiciary */}
-            <Card
-              hoverEffect
-              className="border-t-8 border-t-olive p-8 flex flex-col h-full"
-            >
-              <div className="bg-green-50 w-16 h-16 rounded-md flex items-center justify-center mb-6 font-display font-bold text-3xl text-olive border border-green-200">
-                03
-              </div>
-              <h3 className="font-display text-3xl font-bold text-ink mb-2 uppercase">
-                Tư pháp
-              </h3>
-              <div className="text-olive font-mono font-bold text-sm mb-6 uppercase tracking-wider">
-                TÒA ÁN & VKS
-              </div>
-              <div className="space-y-4 text-base text-graphite/80">
-                <p>
-                  <strong className="text-olive">Tòa án nhân dân:</strong>
-                </p>
-                <ul className="list-disc list-outside ml-4 marker:text-olive space-y-1">
-                  <li>Thực hiện quyền tư pháp, xét xử độc lập.</li>
-                  <li>Bảo vệ công lý, quyền con người, công dân.</li>
-                </ul>
-                <p>
-                  <strong className="text-olive">Viện kiểm sát:</strong>
-                </p>
-                <ul className="list-disc list-outside ml-4 marker:text-olive space-y-1">
-                  <li>Thực hành quyền công tố, kiểm sát tư pháp.</li>
-                  <li>Bảo đảm pháp luật được chấp hành nghiêm chỉnh.</li>
-                </ul>
-                <p className="text-sm italic text-ink/70 mt-2">
-                  Ý nghĩa: Không ai đứng trên pháp luật.
-                </p>
-              </div>
-            </Card>
-          </div>
-
-          <div className="mt-16 max-w-4xl mx-auto">
-            <div className="text-center">
-              <span className="inline-block bg-white px-4 py-2 border border-ink text-sm text-ink italic rounded-full shadow-sm">
-                "Quyền lực nhà nước là thống nhất, có sự phân công, phối hợp,
-                kiểm soát giữa các cơ quan nhà nước." (Điều 2 - Hiến pháp 2013)
-              </span>
-            </div>
-          </div>
-        </div>
-      </Section>
-
-      {/* SECTION 4B: PHỐI HỢP & KIỂM SOÁT QUYỀN LỰC */}
-      <Section className="items-center justify-center px-4 md:px-10 bg-ink text-bone border-y-2 border-bone">
-        <div className="max-w-screen-2xl mx-auto w-full py-16">
-          <div className="text-center mb-12">
+      {/* SECTION 3: CASE STUDIES - YOUTH MOVEMENTS & INSTABILITY 2020-2026 */}
+      <Section className="items-center justify-center px-4 md:px-6 bg-bone border-b-2 border-ink">
+        <div className="max-w-5xl mx-auto w-full py-4">
+          <div className="text-center mb-4">
             <motion.div
               initial={{ opacity: 0, y: -20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="inline-block bg-gold border-4 border-bone px-6 py-2 shadow-hard transform rotate-1 mb-6"
+              className="inline-block bg-crimson border-4 border-ink px-6 py-2 shadow-hard transform rotate-1 mb-4"
             >
-              <span className="font-mono font-bold uppercase tracking-widest text-sm md:text-base text-ink">
-                Phần 4
+              <span className="font-mono font-bold uppercase tracking-widest text-xs text-white">
+                Trường Hợp Thực Tế
               </span>
             </motion.div>
-            <h2 className="font-display text-3xl md:text-5xl font-black uppercase mb-4 text-white">
-              Phối hợp & Kiểm soát <span className="text-gold">Quyền lực</span>
+            <h2 className="font-display text-xl md:text-2xl font-black uppercase text-ink mb-2">
+              Các Phong Trào Thanh Niên & Biến Động Chính Trị (2020-2026)
             </h2>
-            <p className="text-bone/70 max-w-3xl mx-auto text-lg">
-              Mối quan hệ biện chứng giữa các cơ quan trong việc thực thi quyền lực nhà nước.
+            <p className="text-sm text-graphite/70 max-w-2xl mx-auto">
+              Những cuộc "cách mạng màu" và phong trào thanh niên kiêu hãnh đã dẫn đến những kết quả ra sao?
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-            {/* Phối hợp */}
-            <div className="bg-white/5 border-2 border-bone/30 p-8 hover:-translate-y-1 transition-transform">
-              <div className="flex items-center gap-3 mb-6">
-                <span className="bg-gold text-ink w-10 h-10 flex items-center justify-center rounded-full text-lg font-black">
-                  A
-                </span>
-                <h4 className="font-display text-2xl font-bold text-gold uppercase">
-                  Nguyên tắc "Phối hợp"
-                </h4>
+          {/* Grid container for all cases - 2 columns */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-2.5 mb-4">
+            {/* Case 1: Bangladesh */}
+            <div className="bg-white border-t-8 border-t-blue-600 p-2.5 shadow-hard">
+              <div className="flex items-center gap-2 mb-1.5">
+                <span className="bg-blue-600 text-white px-2 py-0.5 rounded-full font-bold text-xs">01</span>
+                <h3 className="font-display text-sm font-bold text-ink uppercase">Bangladesh: Nổi Dậy Sinh Viên (2024)</h3>
               </div>
-              <ul className="space-y-4 text-bone/80">
-                <li className="flex items-start gap-3">
-                  <span className="mt-1 w-2 h-2 bg-gold rounded-full shrink-0"></span>
-                  <span><strong className="text-gold">Không tách biệt tuyệt đối:</strong> Khác với "Tam quyền phân lập" tư bản chủ nghĩa, các cơ quan quyền lực Việt Nam có sự gắn kết chặt chẽ.</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="mt-1 w-2 h-2 bg-gold rounded-full shrink-0"></span>
-                  <span><strong className="text-gold">Mục tiêu chung:</strong> Cùng hướng tới xây dựng và bảo vệ Tổ quốc, phục vụ lợi ích của Nhân dân.</span>
-                </li>
-              </ul>
-            </div>
-
-            {/* Kiểm soát */}
-            <div className="bg-white/5 border-2 border-bone/30 p-8 hover:-translate-y-1 transition-transform">
-              <div className="flex items-center gap-3 mb-6">
-                <span className="bg-crimson text-white w-10 h-10 flex items-center justify-center rounded-full text-lg font-black">
-                  B
-                </span>
-                <h4 className="font-display text-2xl font-bold text-crimson uppercase">
-                  Nguyên tắc "Kiểm soát"
-                </h4>
-              </div>
-              <p className="mb-4 text-bone/50 italic text-sm">Mục đích: Tránh lạm quyền, độc đoán.</p>
-              <ul className="space-y-4 text-bone/80">
-                <li className="flex items-start gap-3">
-                  <span className="mt-1 w-2 h-2 bg-crimson rounded-full shrink-0"></span>
-                  <span><strong className="text-crimson">Kiểm soát bên trong:</strong> Mỗi cơ quan có cơ chế tự kiểm soát (Thanh tra, Kiểm toán nhà nước).</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="mt-1 w-2 h-2 bg-crimson rounded-full shrink-0"></span>
-                  <span><strong className="text-crimson">Kiểm soát lẫn nhau:</strong> Quốc hội giám sát Chính phủ; Tòa án xét xử hành chính; VKS kiểm sát tư pháp.</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="mt-1 w-2 h-2 bg-crimson rounded-full shrink-0"></span>
-                  <span><strong className="text-crimson">Nhân dân kiểm soát:</strong> Qua bầu cử, khiếu nại, tố cáo, tiếp cận thông tin.</span>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </Section>
-
-      {/* SECTION 5: ACCOUNTABILITY (Topic 3 - Part III from prompt) */}
-      <Section className="items-center justify-center px-4 md:px-10 bg-sand border-t-2 border-ink">
-        <div className="max-w-screen-2xl mx-auto w-full py-16">
-          <div className="text-center mb-12">
-            <h2 className="font-display text-3xl md:text-5xl font-black text-ink uppercase">
-              III. Mối liên hệ & Trách nhiệm giải trình
-            </h2>
-            <KineticSubline className="text-center max-w-3xl mx-auto mt-4">
-              "Nhà nước phải chịu trách nhiệm trước Nhân dân"
-            </KineticSubline>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-8">
-            {/* 1. Chủ thể quyền lực */}
-            <Card
-              variant="flat"
-              className="p-8 border-t-8 border-t-blue-600 h-full"
-            >
-              <h3 className="font-display text-2xl font-bold mb-4 uppercase text-blue-800">
-                1. Nhân dân là chủ thể
-              </h3>
-              <ul className="space-y-2 text-graphite list-disc list-outside ml-4 marker:text-blue-600">
-                <li>Bầu ra Quốc hội, HĐND.</li>
-                <li>Tham gia quản lý nhà nước.</li>
-                <li>
-                  <strong>Nhà nước chỉ là người được ủy quyền.</strong>
-                </li>
-              </ul>
-            </Card>
-
-            {/* 2. Trách nhiệm giải trình */}
-            <Card
-              variant="flat"
-              className="p-8 border-t-8 border-t-ember h-full"
-            >
-              <h3 className="font-display text-2xl font-bold mb-4 uppercase text-ember">
-                2. Trách nhiệm giải trình
-              </h3>
-              <ul className="space-y-2 text-graphite list-disc list-outside ml-4 marker:text-ember">
-                <li>
-                  Phải <strong>công khai</strong> hoạt động.
-                </li>
-                <li>
-                  <strong>Giải thích</strong> quyết định trước Nhân dân.
-                </li>
-                <li>Chịu trách nhiệm khi có sai phạm.</li>
-              </ul>
-              <div className="mt-4 bg-ember/10 p-3 rounded text-sm italic border-l-2 border-ember">
-                Ví dụ: ĐBQH tiếp xúc cử tri; Cơ quan trả lời khiếu nại.
-              </div>
-            </Card>
-
-            {/* 3. Cơ chế giám sát */}
-            <Card
-              variant="flat"
-              className="p-8 border-t-8 border-t-purple-600 h-full"
-            >
-              <h3 className="font-display text-2xl font-bold mb-4 uppercase text-purple-800">
-                3. Cơ chế giám sát
-              </h3>
-              <div className="space-y-2 text-graphite">
-                <p className="font-bold">Các kênh giám sát:</p>
-                <div className="flex flex-wrap gap-2">
-                  <span className="bg-white border border-ink px-2 py-1 text-xs font-bold shadow-sm">
-                    Bầu cử
-                  </span>
-                  <span className="bg-white border border-ink px-2 py-1 text-xs font-bold shadow-sm">
-                    Mặt trận TQ
-                  </span>
-                  <span className="bg-white border border-ink px-2 py-1 text-xs font-bold shadow-sm">
-                    Báo chí
-                  </span>
-                  <span className="bg-white border border-ink px-2 py-1 text-xs font-bold shadow-sm">
-                    Khiếu nại/Tố cáo
-                  </span>
+              <div className="space-y-0.5">
+                <div>
+                  <h4 className="font-bold text-blue-700 mb-0.5 uppercase text-xs">Nguyên Nhân</h4>
+                  <p className="text-graphite/80 text-xs leading-tight">
+                    Biểu tình phản đối hạn ngạch việc làm, bùng phát thành phong trào đòi Thủ tướng Sheikh Hasina từ chức.
+                  </p>
                 </div>
-                <p className="mt-4 text-sm font-medium text-purple-900">
-                  Ý nghĩa: Bảo đảm Nhà nước thực sự vì Nhân dân, củng cố niềm tin.
-                </p>
+                <div>
+                  <h4 className="font-bold text-blue-700 mb-0.5 uppercase text-xs">Vai Trò Thanh Niên</h4>
+                  <p className="text-graphite/80 text-xs leading-tight">
+                    Sinh viên là lực lượng nòng cốt, tổ chức qua mạng xã hội, đối đầu trực diện với lực lượng an ninh.
+                  </p>
+                </div>
               </div>
-            </Card>
+              <div className="bg-blue-50 p-2 border-2 border-blue-200 rounded-lg mt-1.5">
+                <h4 className="font-bold text-blue-800 mb-0.5 uppercase text-xs">Hiện Tại (5/2026)</h4>
+                <ul className="space-y-0.25 text-xs text-graphite/80 list-disc list-inside">
+                  <li>Cải cách hiến pháp, tái cấu trúc định chế</li>
+                  <li className="text-crimson font-semibold">⚠️ Bất ổn vẫn còn</li>
+                </ul>
+              </div>
+            </div>
+
+            {/* Case 2: Sri Lanka */}
+            <div className="bg-white border-t-8 border-t-orange-600 p-2.5 shadow-hard">
+              <div className="flex items-center gap-2 mb-1.5">
+                <span className="bg-orange-600 text-white px-2 py-0.5 rounded-full font-bold text-xs">02</span>
+                <h3 className="font-display text-sm font-bold text-ink uppercase">Sri Lanka: "Aragalaya" (2022)</h3>
+              </div>
+              <div className="space-y-0.5">
+                <div>
+                  <h4 className="font-bold text-orange-700 mb-0.5 uppercase text-xs">Nguyên Nhân</h4>
+                  <p className="text-graphite/80 text-xs leading-tight">
+                    Khủng hoảng kinh tế tồi tệ nhất, thiếu lương thực, nhiên liệu, thuốc men.
+                  </p>
+                </div>
+                <div>
+                  <h4 className="font-bold text-orange-700 mb-0.5 uppercase text-xs">Vai Trò Thanh Niên</h4>
+                  <p className="text-graphite/80 text-xs leading-tight">
+                    Gen Z dẫn đầu cắm trại dài ngày Colombo, tạo sức ép buộc Rajapaksa phải tháo chạy.
+                  </p>
+                </div>
+              </div>
+              <div className="bg-orange-50 p-2 border-2 border-orange-200 rounded-lg mt-1.5">
+                <h4 className="font-bold text-orange-800 mb-0.5 uppercase text-xs">Hiện Tại (5/2026)</h4>
+                <ul className="space-y-0.25 text-xs text-graphite/80 list-disc list-inside">
+                  <li>Ổn định chính trị dần</li>
+                  <li className="text-crimson font-semibold">⚠️ Thách thức nhiều</li>
+                </ul>
+              </div>
+            </div>
+
+            {/* Case 3: Kazakhstan */}
+            <div className="bg-white border-t-8 border-t-yellow-600 p-2.5 shadow-hard">
+              <div className="flex items-center gap-2 mb-1.5">
+                <span className="bg-yellow-600 text-white px-2 py-0.5 rounded-full font-bold text-xs">03</span>
+                <h3 className="font-display text-sm font-bold text-ink uppercase">Kazakhstan: "Tháng Giêng" (2022)</h3>
+              </div>
+              <div className="space-y-0.5">
+                <div>
+                  <h4 className="font-bold text-yellow-700 mb-0.5 uppercase text-xs">Nguyên Nhân</h4>
+                  <p className="text-graphite/80 text-xs leading-tight">
+                    Giá nhiên liệu tăng vọt, bất mãn bất bình đẳng kinh tế.
+                  </p>
+                </div>
+                <div>
+                  <h4 className="font-bold text-yellow-700 mb-0.5 uppercase text-xs">Diễn Biến</h4>
+                  <p className="text-graphite/80 text-xs leading-tight">
+                    Biểu tình biến thành bạo động. Tokayev yêu cầu CSTO can thiệp dập tắt.
+                  </p>
+                </div>
+              </div>
+              <div className="bg-yellow-50 p-2 border-2 border-yellow-200 rounded-lg mt-1.5">
+                <h4 className="font-bold text-yellow-800 mb-0.5 uppercase text-xs">Hiện Tại (5/2026)</h4>
+                <ul className="space-y-0.25 text-xs text-graphite/80 list-disc list-inside">
+                  <li>Tokayev củng cố quyền lực</li>
+                  <li className="text-crimson font-semibold">⚠️ Vấn đề cốt lõi</li>
+                </ul>
+              </div>
+            </div>
+
+            {/* Case 4: Myanmar */}
+            <div className="bg-white border-t-8 border-t-red-600 p-2.5 shadow-hard">
+              <div className="flex items-center gap-2 mb-1.5">
+                <span className="bg-red-600 text-white px-2 py-0.5 rounded-full font-bold text-xs">04</span>
+                <h3 className="font-display text-sm font-bold text-ink uppercase">Myanmar: Khủng Hoảng (2021-Nay)</h3>
+              </div>
+              <div className="space-y-0.5">
+                <div>
+                  <h4 className="font-bold text-red-700 mb-0.5 uppercase text-xs">Nguyên Nhân</h4>
+                  <p className="text-graphite/80 text-xs leading-tight">
+                    Quân đội lật đổ chính phủ dân cử Aung San Suu Kyi.
+                  </p>
+                </div>
+                <div>
+                  <h4 className="font-bold text-red-700 mb-0.5 uppercase text-xs">Vai Trò Thanh Niên</h4>
+                  <p className="text-graphite/80 text-xs leading-tight">
+                    Gen Z tiên phong CDM, sau gia nhập PDF kháng chiến vũ trang.
+                  </p>
+                </div>
+              </div>
+              <div className="bg-red-50 p-2 border-2 border-red-200 rounded-lg mt-1.5">
+                <h4 className="font-bold text-red-800 mb-0.5 uppercase text-xs">Hiện Tại (5/2026)</h4>
+                <ul className="space-y-0.25 text-xs text-graphite/80 list-disc list-inside">
+                  <li className="text-crimson font-semibold">🔴 Nội chiến khốc liệt</li>
+                  <li className="ml-4">Khủng hoảng nhân đạo</li>
+                </ul>
+              </div>
+            </div>
+
+
+          </div>
+
+          {/* Key Takeaway - Full Width */}
+          <div className="bg-crimson/10 border-l-8 border-l-crimson p-3">
+            <h3 className="font-display text-base font-bold text-crimson uppercase mb-1.5">📌 Bài Học Chính</h3>
+            <div className="space-y-1 text-graphite/80 text-xs">
+              <p>
+                <strong>Thanh niên CÓ vai trò nòng cốt</strong> nhưng kết quả không lúc nào chắc chắn tích cực.
+              </p>
+              <p>
+                <strong>Vấn đề:</strong> Phong trào thiếu lãnh đạo rõ ràng → dẫn tới bất ổn kinh tế, xung đột, nội chiến.
+              </p>
+              <p>
+                <strong>Yêu cầu thanh niên Việt Nam:</strong> Không chỉ "lực lượng xung kích" mà phải có <em>tri thức vững vàng, bản lĩnh chính trị</em> để phân biệt <em>làm chủ thực sự</em> với <em>bị dẫn dắt</em>.
+              </p>
+            </div>
           </div>
         </div>
       </Section>
     </div>
   );
 };
+export default ApplicationBasisPage;
 
-export default DangVaNhanDanPage;

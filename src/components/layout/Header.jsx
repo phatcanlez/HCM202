@@ -44,12 +44,12 @@ export default function Header() {
   }, [location.pathname]);
 
   const navItems = [
-    { name: "Trang chủ", path: "/" },
-    { name: "Khái niệm", path: "/government" },
-    { name: "Luận điểm chính", path: "/popular" },
-    { name: "Giá trị hiện nay", path: "/government" },
-    { name: "Liên hệ sinh viên", path: "/ai-chatbot" },
-    { name: "Kết luận", path: "/informations" },
+    { name: "Đặt vấn đề", path: "/" },
+    { name: "Cơ sở lý thuyết", path: "/government" },
+    { name: "Cơ sở vận dụng", path: "/popular" },
+    { name: "Giải pháp / Bài học", path: "/lesson" },
+    { name: "Liên hệ sinh viên", path: "/ai" },
+    { name: "Hồ sơ", path: "/informations" },
   ];
 
   const handleNavigate = (href) => {
@@ -73,9 +73,9 @@ export default function Header() {
             onClick={() => handleNavigate("/")}
             className="font-display text-3xl text-brown cursor-pointer select-none hover:translate-x-1 transition-transform tracking-tight leading-none uppercase border-2 border-transparent hover:border-brown hover:bg-red-muted/20 p-1"
           >
-            MLN<span className="text-red-muted">131</span>
+            HCM<span className="text-red-muted">202</span>
             <span className="hidden md:inline-block ml-3 text-xs font-mono tracking-widest text-brown/60 border-l-2 border-brown/20 pl-3">
-              SCIENTIFIC SOCIALISM
+              Ho Chi Minh Ideology
             </span>
           </div>
 

@@ -20,9 +20,9 @@ const HomePage = () => {
   const opacityHero = useTransform(scrollYProgress, [0, 0.2], [1, 0]);
 
   const featurePills = [
-    "Quyền lực thuộc về Nhân dân",
-    "Thượng tôn Hiến pháp & Pháp luật",
-    "Đảng lãnh đạo - Nhà nước quản lý",
+    "Tham gia tự giác và có trách nhiệm",
+    "Nâng cao bản lĩnh chính trị",
+    "Không bị dụ dỗ bởi thế lực thù địch",
   ];
 
   return (
@@ -60,7 +60,7 @@ const HomePage = () => {
                 transition={{ duration: 0.5, type: "spring" }}
                 className="font-display font-bold text-5xl md:text-7xl uppercase text-brown leading-tight tracking-normal"
               >
-                Không có gì quý hơn
+                Thanh niên &
               </motion.h1>
               <motion.h1
                 initial={{ x: 50, opacity: 0 }}
@@ -68,12 +68,12 @@ const HomePage = () => {
                 transition={{ duration: 0.5, delay: 0.1, type: "spring" }}
                 className="font-display font-bold text-5xl md:text-7xl uppercase text-red-muted leading-tight tracking-normal"
               >
-                Độc lập Tự do
+                Quyền lực Nhà nước
               </motion.h1>
             </div>
 
             <KineticSubline className="max-w-xl text-brown/80 text-lg font-medium border-l-4 border-red-muted pl-4 ml-2">
-              Tư tưởng Hồ Chí Minh - Giá trị lịch sử và bài học cho thế hệ trẻ
+              Từ tư tưởng Hồ Chí Minh đến việc nhận diện mâu thuẫn trong các phong trào biến động chính trị-xã hội
             </KineticSubline>
 
             <div className="flex flex-wrap gap-3 pt-4">
@@ -129,11 +129,11 @@ const HomePage = () => {
         <div className="max-w-screen-2xl mx-auto w-full py-16">
           <div className="text-center mb-16 space-y-4">
             <h2 className="text-3xl md:text-5xl font-display font-bold text-brown uppercase">
-              Quyền Làm Chủ <br />
-              <span className="text-red-muted">Của Nhân Dân</span>
+              Đặt Vấn Đề <br />
+              <span className="text-red-muted">Bối Cảnh Thời Đại</span>
             </h2>
             <KineticSubline className="text-center max-w-3xl mx-auto text-brown">
-              Nhà nước là công cụ thực hiện quyền làm chủ của Nhân dân.
+              Trong bối cảnh truyền thông số lan truyền nhanh chóng, thanh niên tham gia ngày càng mạnh mẽ vào các phong trào chính trị-xã hội.
             </KineticSubline>
           </div>
 
@@ -150,11 +150,10 @@ const HomePage = () => {
                 </span>
               </div>
               <h3 className="font-display text-2xl font-bold mb-4 text-brown">
-                Nhà nước phục vụ
+                Sự Bùng Nổ Thông Tin
               </h3>
               <p className="text-lg text-brown/80 mb-6 flex-grow">
-                Nhà nước sinh ra không phải để cai trị mà để phục vụ lợi ích của
-                Nhân dân.
+                Truyền thông số mang lại nhiều rủi ro. Nhiều người trẻ phiêu du trên mạng nếu không có thế giới quan đúng đắn, không có bản lĩnh chính trị vững vàng thì rất dễ bị đánh mất chính mình.
               </p>
               <div className="h-1 w-12 bg-red-muted"></div>
             </Card>
@@ -170,11 +169,10 @@ const HomePage = () => {
                 </span>
               </div>
               <h3 className="font-display text-2xl font-bold mb-4 text-brown">
-                Nhân dân làm chủ
+                Mâu Thuẫn Cốt Lõi
               </h3>
               <p className="text-lg text-brown/80 mb-6 flex-grow">
-                Nhân dân thực hiện quyền làm chủ trực tiếp và gián tiếp đối với
-                Nhà nước.
+                Sự tham gia ồ ạt của thanh niên vào các biến động chính trị-xã hội là biểu hiện của việc thực hiện quyền làm chủ hay chỉ là dấu hiệu của việc quyền lực bị dẫn dắt?
               </p>
               <div className="h-1 w-12 bg-red-muted"></div>
             </Card>
@@ -190,11 +188,10 @@ const HomePage = () => {
                 </span>
               </div>
               <h3 className="font-display text-2xl font-bold mb-4 text-brown">
-                Quyền & Nghĩa vụ
+                Sự Lôi Kéo Từ Phía Xấu
               </h3>
               <p className="text-lg text-brown/80 mb-6 flex-grow">
-                Mối quan hệ pháp lý 2 chiều: Công dân được hưởng quyền và phải
-                thực hiện nghĩa vụ đối với Nhà nước.
+                Mâu thuẫn giữa việc thực sự "làm chủ" và việc "bị lợi dụng" nằm ở đâu, nhất là khi các thế lực phản động luôn tìm mọi cách tuyên truyền trên không gian mạng?
               </p>
               <div className="h-1 w-12 bg-red-muted"></div>
             </Card>
@@ -202,7 +199,7 @@ const HomePage = () => {
 
           <div className="mt-16">
             <MarqueeStrip
-              text="MỐI LIÊN HỆ CÔNG DÂN - NHÀ NƯỚC • QUYỀN LỢI ĐI ĐÔI VỚI NGHĨA VỤ"
+              text="THANH NIÊN VÀ QUYỀN LỰC NHÀ NƯỚC • TỪ TƯ TƯỞNG HỒ CHÍ MINH ĐẾN NHẬN DIỆN MÂU THUẪN"
               speed={26}
               tone="dark"
               className="font-display font-bold uppercase tracking-widest text-xl border-2 border-ink shadow-hard"
@@ -236,16 +233,16 @@ const HomePage = () => {
             viewport={{ once: true }}
             className="font-display text-3xl md:text-5xl lg:text-6xl font-bold leading-tight tracking-normal"
           >
-            "Không có gì quý hơn{" "}
+            "Địa vị cao nhất là{" "}
             <span className="text-brown bg-beige px-2 box-decoration-clone">
-              độc lập tự do
+              dân, vì dân là chủ
             </span>
             "
           </motion.blockquote>
 
           <div className="py-8">
             <MarqueeStrip
-              text="Lập pháp • Hành pháp • Tư pháp"
+              text="Nhà nước của Dân • Do Dân • Vì Dân"
               speed={30}
               tone="dark"
               className="bg-transparent text-beige/50 font-display font-bold uppercase tracking-widest text-xl border-none"
@@ -254,7 +251,7 @@ const HomePage = () => {
         </div>
       </Section>
 
-      {/* SECTION 4: STUDENT RESPONSIBILITY (Topic 5) */}
+      {/* SECTION 4: YOUTH RESPONSIBILITIES (Vai trò xung kích của thanh niên) */}
       <Section className="items-center justify-center px-4 md:px-10 bg-beige border-t border-brown/20">
         <div className="max-w-screen-2xl mx-auto w-full py-16">
           <div className="text-center mb-12">
@@ -265,14 +262,14 @@ const HomePage = () => {
               className="inline-block bg-red-muted border border-brown px-6 py-2 transform -rotate-1 mb-6"
             >
               <span className="font-body font-bold uppercase tracking-widest text-sm md:text-base text-white">
-                Trách Nhiệm Sinh Viên
+                Vai Trò Xung Kích
               </span>
             </motion.div>
             <h2 className="text-3xl md:text-5xl font-display font-bold text-brown uppercase mb-4">
-              Xứng Đáng Làm Công Dân <span className="text-red-muted">Tốt</span>
+              Thanh Niên Phải <span className="text-red-muted">Đóng Góp Tích Cực</span>
             </h2>
             <p className="text-xl text-brown/70 font-body max-w-2xl mx-auto">
-              "Chúng ta cần làm gì để góp phần xây dựng đất nước?"
+              "Đoàn viên và thanh niên ta nói chung là tốt, mọi việc đều hăng hái xung phong"
             </p>
           </div>
 
@@ -289,10 +286,10 @@ const HomePage = () => {
                 </span>
               </div>
               <h3 className="font-display text-xl font-bold mb-3 text-brown">
-                Hiểu Đúng
+                Nâng Cao Bản Lĩnh
               </h3>
               <p className="text-brown/80 flex-grow">
-                Tìm hiểu kỹ về Hiến pháp, pháp luật để có nhận thức đúng đắn.
+                Nâng cao nhận thức và bản lĩnh chính trị thông qua học tập tư tưởng Hồ Chí Minh, kiên định ý thức và trách nhiệm công dân.
               </p>
               <div className="h-1 w-12 bg-red-muted mt-4"></div>
             </Card>
@@ -309,11 +306,10 @@ const HomePage = () => {
                 </span>
               </div>
               <h3 className="font-display text-xl font-bold mb-3 text-brown">
-                Làm Đúng
+                Trau Dồi Năng Lực
               </h3>
               <p className="text-brown/80 flex-grow">
-                Tuân thủ nội quy nhà trường, quy định địa phương, luật giao
-                thông, an ninh mạng...
+                Rèn luyện năng lực tư duy, học tập để giải quyết yêu cầu đa dạng của cuộc sống và đóng góp hiệu quả cho cách mạng.
               </p>
               <div className="h-1 w-12 bg-red-muted mt-4"></div>
             </Card>
@@ -330,11 +326,10 @@ const HomePage = () => {
                 </span>
               </div>
               <h3 className="font-display text-xl font-bold mb-3 text-brown">
-                Phản Biện Đúng
+                Chống Tiêu Cực
               </h3>
               <p className="text-brown/80 flex-grow">
-                Góp ý xây dựng văn minh, tỉnh táo trước các luận điệu xuyên tạc
-                của thế lực thù địch.
+                Trau dồi đạo đức cách mạng, chủ động chống lại chủ nghĩa cá nhân và các căn bệnh "giặc nội xâm".
               </p>
               <div className="h-1 w-12 bg-red-muted mt-4"></div>
             </Card>
@@ -351,11 +346,10 @@ const HomePage = () => {
                 </span>
               </div>
               <h3 className="font-display text-xl font-bold mb-3 text-brown">
-                Hành Động
+                Khát Vọng Cống Hiến
               </h3>
               <p className="text-brown/80 flex-grow">
-                Rèn luyện đạo đức, tri thức. Sinh viên là rường cột của quốc gia
-                trong tương lai.
+                Rèn luyện để trở thành người thừa kế xây dựng chủ nghĩa xã hội, góp phần xây dựng đất nước giàu mạnh, văn minh.
               </p>
               <div className="h-1 w-12 bg-red-muted mt-4"></div>
             </Card>

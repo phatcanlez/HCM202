@@ -20,8 +20,8 @@ import Card from "../../components/ui/Card";
 
 const members = [
   {
-    name: "Lê Thị Thanh Thúy",
-    studentCode: "SE170111",
+    name: "Nguyễn Tấn Phát",
+    studentCode: "SE183397",
     role: "leader",
     gender: "female",
     task: [
@@ -30,15 +30,15 @@ const members = [
     ],
   },
   {
-    name: "Nguyễn Tấn Phát",
-    studentCode: "SE183397",
+    name: "Bùi Mạnh Linh",
+    studentCode: "SE185068",
     role: "member",
     gender: "male",
     task: ["Biên tập nội dung thuyết trình", "Thiết kế & xây dựng website"],
   },
   {
-    name: "Châu Vĩnh Tiến",
-    studentCode: "SE183243",
+    name: "Lê Viết Minh Trí",
+    studentCode: "SE185119",
     role: "member",
     gender: "male",
     task: [
@@ -47,8 +47,8 @@ const members = [
     ],
   },
   {
-    name: "Lê Quốc Bảo",
-    studentCode: "SS170194",
+    name: "Lý Hoàng Thành",
+    studentCode: "SS181200",
     role: "member",
     gender: "male",
     task: [
@@ -57,12 +57,12 @@ const members = [
     ],
   },
   {
-    name: "Nguyễn Lý Minh Kỳ",
-    studentCode: "SE181748",
+    name: "Nguyễn Hoàng Gia Luân",
+    studentCode: "SE183918",
     role: "member",
     gender: "male",
     task: [
-      "Tích hợp và phát triển chatbot AI", 
+      "Tích hợp và phát triển chatbot AI",
       "Kiểm thử và đánh giá trải nghiệm"
     ],
   },
@@ -96,8 +96,8 @@ const ProfileCard = ({ member }) => {
       <div className="flex justify-between items-start mb-6">
         {/* Avatar Image */}
         <div className="w-20 h-20 border-2 border-ink bg-bone shrink-0 flex items-center justify-center relative shadow-sm overflow-hidden">
-          <img 
-            src={avatarSrc} 
+          <img
+            src={avatarSrc}
             alt={member.name}
             className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
           />
@@ -232,31 +232,7 @@ const InformationsPage = () => {
           </div>
         </div>
 
-        {/* References Section */}
-        <div className="max-w-5xl mx-auto mb-20">
-          <div className="flex items-center justify-center gap-4 mb-12">
-            <div className="h-px bg-ink/30 flex-1 max-w-[100px]"></div>
-            <h2 className="text-2xl font-display font-bold text-ink uppercase tracking-widest">
-              Tài liệu tham khảo
-            </h2>
-            <div className="h-px bg-ink/30 flex-1 max-w-[100px]"></div>
-          </div>
 
-          <div className="flex flex-wrap justify-center gap-6">
-            {references.map((ref, index) => (
-              <div key={index} className="w-full md:w-[calc(50%-0.75rem)] max-w-md">
-                <ReferenceCard reference={ref} index={index} />
-              </div>
-            ))}
-          </div>
-        </div>
-
-        {/* Footer Note */}
-        <div className="text-center pb-12 opacity-50">
-          <p className="font-mono text-xs uppercase tracking-widest text-ink">
-            FPT University &copy; 2026
-          </p>
-        </div>
       </Section>
     </div>
   );
