@@ -37,16 +37,6 @@ const members = [
     task: ["Biên tập nội dung thuyết trình", "Thiết kế & xây dựng website"],
   },
   {
-    name: "Lê Viết Minh Trí",
-    studentCode: "SE185119",
-    role: "member",
-    gender: "male",
-    task: [
-      "Thu thập tư liệu, số liệu cho website",
-      "Tìm kiếm và đóng góp tư liệu học thuật",
-    ],
-  },
-  {
     name: "Lý Hoàng Thành",
     studentCode: "SS181200",
     role: "member",
@@ -57,30 +47,26 @@ const members = [
     ],
   },
   {
+    name: "Lê Viết Minh Trí",
+    studentCode: "SE185119",
+    role: "member",
+    gender: "male",
+    task: [
+      "Thu thập tư liệu, số liệu cho website",
+      "Tìm kiếm và đóng góp tư liệu học thuật",
+    ],
+  },
+  {
     name: "Nguyễn Hoàng Gia Luân",
     studentCode: "SE183918",
     role: "member",
     gender: "male",
     task: [
-      "Tích hợp và phát triển chatbot AI",
+      "Tìm kiếm và đóng góp tư liệu học thuật",
       "Kiểm thử và đánh giá trải nghiệm"
     ],
   },
 ];
-
-const references = [
-  {
-    title: "Giáo trình Chủ nghĩa Xã hội khoa học (Bộ GD&ĐT)",
-    type: "document",
-    link: "https://drive.google.com/file/d/1fgQf9P5Vc77CiIkhcXfs65qgAFgWlp9u/view",
-  },
-  {
-    title: "Slide bài giảng MLN131 - FPT University",
-    type: "document",
-    link: "https://drive.google.com/drive/folders/1QupRI2q9CcG8rycs1V7Hqd1iGvfzv1Q5",
-  },
-];
-
 const ProfileCard = ({ member }) => {
   const isLeader = member.role === "leader";
   const isFemale = member.gender === "female";
