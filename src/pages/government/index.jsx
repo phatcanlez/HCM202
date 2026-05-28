@@ -201,7 +201,7 @@ const TheoricBasisPage = () => {
               <span className="text-crimson">Của Thanh Niên</span>
             </h2>
             <p className="font-body text-sm md:text-base text-graphite/70 max-w-3xl mx-auto">
-              "Hồ Chí Minh đặc biệt gửi gắm niềm tin vào thế hệ trẻ. Thanh niên phải là lực lượng xung kích trong xây dựng đất nước."
+              "Chủ tịch Hồ Chí Minh đặc biệt gửi gắm niềm tin vào thế hệ trẻ. Thanh niên phải là lực lượng xung kích trong xây dựng đất nước."
             </p>
           </div>
 
@@ -234,7 +234,7 @@ const TheoricBasisPage = () => {
             </Card>
 
             {/* Require 2 */}
-            <Card variant="default" hoverEffect className="p-3 border-t-8 border-t-ember">
+            <Card variant="default" hoverEffect className="p-3 border-t-8 border-t-ember bg-bone">
               <div className="w-14 h-14 bg-ember/20 rounded-lg flex items-center justify-center mb-3 border-2 border-ember shadow-[4px_4px_0px_0px_#FF5500]">
                 <span className="font-display font-black text-xl text-ember">02</span>
               </div>
@@ -261,7 +261,7 @@ const TheoricBasisPage = () => {
             </Card>
 
             {/* Require 3 */}
-            <Card variant="default" hoverEffect className="p-3 border-t-8 border-t-purple-600">
+            <Card variant="default" hoverEffect className="p-3 border-t-8 border-t-purple-600 bg-bone">
               <div className="w-14 h-14 bg-purple-100 rounded-lg flex items-center justify-center mb-3 border-2 border-purple-600 shadow-[4px_4px_0px_0px_#9333EA]">
                 <span className="font-display font-black text-xl text-purple-600">03</span>
               </div>

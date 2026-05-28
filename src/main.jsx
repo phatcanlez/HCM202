@@ -19,8 +19,8 @@ createRoot(document.getElementById("root")).render(
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/trang-chu" element={<HomePage />} />
-        <Route path="/government" element={<GovermentPage />} />
-        <Route path="/popular" element={<PopularPage />} />
+        <Route path="/theory" element={<GovermentPage />} />
+        <Route path="/manipulate" element={<PopularPage />} />
         <Route path="/lesson" element={<LessonPage />} />
         <Route path="/bo-may-nha-nuoc" element={<GovermentPage />} />
         <Route path="/dang-va-nhan-dan" element={<PopularPage />} />

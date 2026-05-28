@@ -58,8 +58,8 @@ const members = [
     role: "member",
     gender: "male",
     task: [
-      "Thu thập tư liệu, số liệu cho website",
-      "Tìm kiếm và đóng góp tư liệu học thuật",
+      "Thu thập tư liệu, biên tập nội dung thuyết trình",
+      "Thiết kế & xây dựng website",
     ],
   },
   {

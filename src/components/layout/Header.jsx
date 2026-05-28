@@ -45,8 +45,8 @@ export default function Header() {
 
   const navItems = [
     { name: "Đặt vấn đề", path: "/" },
-    { name: "Cơ sở lý thuyết", path: "/government" },
-    { name: "Cơ sở vận dụng", path: "/popular" },
+    { name: "Cơ sở lý thuyết", path: "/theory" },
+    { name: "Cơ sở vận dụng", path: "/manipulate" },
     { name: "Giải pháp / Bài học", path: "/lesson" },
     { name: "Hồ sơ", path: "/informations" },
   ];
