@@ -23,7 +23,7 @@ const members = [
     name: "Nguyễn Tấn Phát",
     studentCode: "SE183397",
     role: "leader",
-    gender: "female",
+    gender: "male",
     task: [
       "Tìm kiếm và đóng góp tư liệu học thuật",
       "Điều phối tiến độ, rà soát học thuật",
@@ -188,7 +188,7 @@ const InformationsPage = () => {
           </motion.div>
 
           {/* Main Title Block */}
-          <div className="relative text-center">
+          <div className="relative text-center space-y-4">
             <motion.h1
               initial={{ scale: 0.9, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
@@ -207,10 +207,6 @@ const InformationsPage = () => {
               DỰ ÁN
             </motion.h1>
           </div>
-
-          <KineticSubline className="max-w-2xl mx-auto text-xl text-center">
-            Nhóm thực hiện đề tài MLN131: Chủ nghĩa xã hội khoa học & Tư tưởng Hồ Chí Minh.
-          </KineticSubline>
         </div>
 
         {/* Team Section */}

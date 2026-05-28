@@ -48,7 +48,6 @@ export default function Header() {
     { name: "Cơ sở lý thuyết", path: "/government" },
     { name: "Cơ sở vận dụng", path: "/popular" },
     { name: "Giải pháp / Bài học", path: "/lesson" },
-    { name: "Liên hệ sinh viên", path: "/ai" },
     { name: "Hồ sơ", path: "/informations" },
   ];
 
