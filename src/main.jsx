@@ -10,7 +10,6 @@ import PopularPage from "./pages/popular/index.jsx";
 import LessonPage from "./pages/lesson/index.jsx";
 import GamesPage from "./pages/games/index.jsx";
 import AIChatboxPage from "./pages/ai/index.jsx";
-import AiUsagePage from "./pages/ai-usage/index.jsx";
 import InformationsPage from "./pages/informations/index.jsx";
 
 createRoot(document.getElementById("root")).render(
@@ -28,7 +27,7 @@ createRoot(document.getElementById("root")).render(
         <Route path="/tro-choi" element={<GamesPage />} />
         <Route path="/ai" element={<AIChatboxPage />} />
         <Route path="/ai-chatbot" element={<AIChatboxPage />} />
-        <Route path="/ai-usage" element={<AiUsagePage />} />
+        <Route path="/ai-usage" element={<InformationsPage />} />
         <Route path="/informations" element={<InformationsPage />} />
       </Routes>
     </BrowserRouter>

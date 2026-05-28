@@ -9,7 +9,13 @@ import {
   BookOpen,
   Sparkles,
   Fingerprint,
-  FolderOpen
+  FolderOpen,
+  Search,
+  Cpu,
+  Layout,
+  ArrowRight,
+  Terminal,
+  ShieldAlert
 } from "lucide-react";
 import {
   KineticHeading,
@@ -67,6 +73,40 @@ const members = [
     ],
   },
 ];
+
+const tools = [
+  {
+    category: "RESEARCH & DATA",
+    name: "Nghiên cứu & Tổng hợp",
+    tools: ["ChatGPT 5", "NotebookLM"],
+    icon: Search,
+    description: [
+      "Phân tích, đối chiếu quan điểm giáo trình & văn kiện Đảng.",
+      "Kiểm tra chéo các kiến thức lịch sử.",
+      "Tìm kiếm và đóng góp tư liệu học thuật",
+    ],
+    color: "bg-green-100",
+    border: "border-green-800",
+    iconColor: "text-green-800",
+    status: "OPERATIONAL"
+  },
+  {
+    category: "WEB DEVELOPMENT",
+    name: "Xây dựng Website",
+    tools: ["Gemini Advanced"],
+    icon: Layout,
+    description: [
+      "Generate code UI React/Tailwind.",
+      "Tối ưu Responsive & Animation.",
+      "Debug logic & Refactor code base."
+    ],
+    color: "bg-blue-100",
+    border: "border-blue-800",
+    iconColor: "text-blue-800",
+    status: "ACTIVE"
+  }
+];
+
 const ProfileCard = ({ member }) => {
   const isLeader = member.role === "leader";
   const isFemale = member.gender === "female";
@@ -117,6 +157,91 @@ const ProfileCard = ({ member }) => {
           ))}
         </ul>
       </div>
+    </Card>
+  );
+};
+
+const ToolCard = ({ item }) => {
+  const Icon = item.icon;
+
+  return (
+    <Card
+      variant="default"
+      hoverEffect
+      className="h-full flex flex-col p-6 md:p-8 bg-white border-4 border-ink shadow-hard"
+      hasDecorativeCorners={false}
+    >
+      <div className="flex-1">
+        {/* Header */}
+        <div className="flex justify-between items-start mb-6">
+          <div>
+            <span className={`inline-block border-2 border-ink px-3 py-1 font-bold font-mono text-xs mb-3 uppercase shadow-sm ${item.color}`}>
+              {item.category}
+            </span>
+            <h3 className="font-display text-4xl text-ink leading-[0.9] uppercase font-black">
+              {item.name}
+            </h3>
+          </div>
+
+          <div className="shrink-0 p-3 border-4 border-ink bg-white shadow-sm">
+            <Icon size={32} strokeWidth={1.5} className="text-ink" />
+          </div>
+        </div>
+
+        {/* Tools Grid */}
+        <div className="mb-6">
+          <h4 className="font-bold font-mono text-xs text-ink/60 uppercase mb-2 tracking-widest">Tools Used:</h4>
+          <div className="flex flex-wrap gap-2">
+            {item.tools.map(t => (
+              <span key={t} className="px-3 py-1 border-2 border-ink bg-bone font-bold text-sm">
+                {t}
+              </span>
+            ))}
+          </div>
+        </div>
+
+        {/* Description Process */}
+        <ul className="space-y-3 mb-6">
+          {item.description.map((desc, i) => (
+            <li key={i} className="flex items-start gap-3 text-base text-ink leading-snug">
+              <ArrowRight size={20} className="text-crimson shrink-0 mt-0.5" />
+              <span>{desc}</span>
+            </li>
+          ))}
+        </ul>
+
+        {/* Images Gallery */}
+        {/* {item.images && item.images.length > 0 && (
+          <div className="mb-6">
+            <h4 className="font-bold font-mono text-xs text-ink/60 uppercase mb-3 tracking-widest">Screenshots:</h4>
+            <div className={`grid gap-3 ${item.images.length === 1 ? 'grid-cols-1' : item.images.length === 2 ? 'grid-cols-2' : 'grid-cols-2 md:grid-cols-3'}`}>
+              {item.images.map((img, i) => (
+                <a 
+                  key={i} 
+                  href={img} 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="block border-2 border-ink overflow-hidden hover:shadow-hard transition-shadow duration-200 bg-ink/5"
+                >
+                  <img 
+                    src={img} 
+                    alt={`${item.name} screenshot ${i + 1}`}
+                    className="w-full h-32 object-cover object-top hover:scale-105 transition-transform duration-300"
+                  />
+                </a>
+              ))}
+            </div>
+          </div>
+        )} */}
+      </div>
+
+      {/* Footer Status */}
+      {/* <div className="mt-auto pt-4 border-t-2 border-dashed border-ink flex items-center justify-between">
+        <div className="flex items-center gap-2 font-mono text-xs font-bold text-ink/70">
+          <div className={`w-2 h-2 rounded-full ${item.status === 'OPERATIONAL' ? 'bg-green-500' : item.status === 'OPTIMIZED' ? 'bg-orange-500' : 'bg-blue-500'}`}></div>
+          {item.status}
+        </div>
+      </div> */}
     </Card>
   );
 };
@@ -196,7 +321,7 @@ const InformationsPage = () => {
         </div>
 
         {/* Team Section */}
-        <div className="max-w-7xl mx-auto mb-20">
+        <div className="max-w-7xl mx-auto mb-28">
           <div className="flex items-center justify-center gap-4 mb-12">
             <div className="h-px bg-ink/30 flex-1 max-w-[100px]"></div>
             <h2 className="text-2xl font-display font-bold text-ink uppercase tracking-widest">
@@ -214,6 +339,54 @@ const InformationsPage = () => {
           </div>
         </div>
 
+        {/* AI Usage Section */}
+        <div className="max-w-7xl mx-auto mb-28">
+          <div className="flex items-center justify-center gap-4 mb-12">
+            <div className="h-px bg-ink/30 flex-1 max-w-[100px]"></div>
+            <h2 className="text-2xl font-display font-bold text-ink uppercase tracking-widest text-center">
+              Ứng dụng Trí tuệ Nhân tạo (AI)
+            </h2>
+            <div className="h-px bg-ink/30 flex-1 max-w-[100px]"></div>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-20">
+            {tools.map((item, index) => (
+              <div key={item.name} className={index === 2 ? "lg:col-span-2 lg:w-2/3 lg:mx-auto" : ""}>
+                <ToolCard item={item} />
+              </div>
+            ))}
+          </div>
+
+          {/* Academic Integrity Disclaimer */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="max-w-4xl mx-auto"
+          >
+            <div className="bg-white border-4 border-ink p-8 md:p-12 text-center relative shadow-hard-lg">
+              <div className="absolute -top-5 left-1/2 -translate-x-1/2 bg-crimson text-white px-6 py-2 font-bold font-mono uppercase text-sm border-2 border-ink shadow-sm">
+                Academic Integrity
+              </div>
+
+              <ShieldAlert size={64} className="text-crimson mx-auto mb-6" />
+
+              <h3 className="font-display text-4xl text-ink uppercase mb-4">
+                Cam kết học thuật
+              </h3>
+
+              <div className="space-y-4 text-ink/80 text-lg leading-relaxed max-w-2xl mx-auto">
+                <p>
+                  AI chỉ đóng vai trò là <strong>công cụ hỗ trợ</strong> (tra cứu, gợi ý, tối ưu mã nguồn),
+                  <span className="text-crimson font-bold"> KHÔNG</span> thay thế tư duy.
+                </p>
+                <p>
+                  Mọi nội dung chuyên môn đều được đối chiếu với <strong>Giáo trình Tư tưởng Hồ Chí Minh</strong> được cung cấp.
+                </p>
+              </div>
+            </div>
+          </motion.div>
+        </div>
 
       </Section>
     </div>

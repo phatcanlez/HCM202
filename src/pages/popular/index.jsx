@@ -85,7 +85,7 @@ const ApplicationBasisPage = () => {
       </Section>
 
       {/* SECTION 1: DEFINITION - CONTRADICTIONS IN YOUTH PARTICIPATION */}
-      <Section className="items-center justify-center px-4 md:px-10 bg-white border-b-2 border-ink">
+      <Section className="items-center justify-center px-4 md:px-10 bg-sand border-b-2 border-ink">
         <div className="max-w-screen-xl mx-auto w-full py-12">
           <h2 className="font-display text-4xl font-bold text-ink mb-8 text-center uppercase">
             1. Mâu Thuẫn Trong Vai Trò Của Thanh Niên
@@ -129,7 +129,7 @@ const ApplicationBasisPage = () => {
       </Section>
 
       {/* SECTION 2: MOVEMENTS - EMPOWERMENT OR INSTABILITY */}
-      <Section className="items-center justify-center px-4 md:px-10 bg-paper">
+      <Section className="items-center justify-center px-4 md:px-10 bg-tea">
         <div className="max-w-screen-xl mx-auto w-full">
           <Card
             variant="default"
@@ -230,161 +230,198 @@ const ApplicationBasisPage = () => {
         </div>
       </Section>
 
-      {/* SECTION 3: CASE STUDIES - YOUTH MOVEMENTS & INSTABILITY 2020-2026 */}
-      <Section className="items-center justify-center px-4 md:px-6 bg-bone border-b-2 border-ink">
-        <div className="max-w-5xl mx-auto w-full py-4">
-          <div className="text-center mb-4">
+      {/* SECTION 3: CASE STUDIES - YOUTH MOVEMENTS & POLITICAL INSTABILITY */}
+      <Section className="items-center justify-center px-4 md:px-8 bg-sand border-b-2 border-ink" scrollable={true}>
+        <div className="max-w-screen-xl mx-auto w-full py-12">
+          {/* Section Header */}
+          <div className="text-center mb-10">
             <motion.div
               initial={{ opacity: 0, y: -20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="inline-block bg-crimson border-4 border-ink px-6 py-2 shadow-hard transform rotate-1 mb-4"
+              className="inline-block bg-crimson border-4 border-ink px-6 py-2 shadow-hard transform rotate-1 mb-6"
             >
-              <span className="font-mono font-bold uppercase tracking-widest text-xs text-white">
+              <span className="font-mono font-bold uppercase tracking-widest text-sm text-white">
                 Trường Hợp Thực Tế
               </span>
             </motion.div>
-            <h2 className="font-display text-xl md:text-2xl font-black uppercase text-ink mb-2">
-              Các Phong Trào Thanh Niên & Biến Động Chính Trị (2020-2026)
+            <h2 className="font-display text-3xl md:text-4xl font-black uppercase text-ink mb-3">
+              Phong Trào Thanh Niên &{" "}
+              <span className="text-crimson">Biến Động Chính Trị</span>
             </h2>
-            <p className="text-sm text-graphite/70 max-w-2xl mx-auto">
-              Những cuộc "cách mạng màu" và phong trào thanh niên kiêu hãnh đã dẫn đến những kết quả ra sao?
+            <p className="text-base text-graphite/70 max-w-3xl mx-auto font-body">
+              Khi thanh niên đứng lên — họ có thực sự "làm chủ" hay chỉ là công cụ bị dẫn dắt? Ba trường hợp điển hình dưới đây cho thấy bức tranh đa chiều.
             </p>
           </div>
 
-          {/* Grid container for all cases - 2 columns */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-2.5 mb-4">
+          {/* Timeline-style Case Studies */}
+          <div className="space-y-8">
             {/* Case 1: Bangladesh */}
-            <div className="bg-white border-t-8 border-t-blue-600 p-2.5 shadow-hard">
-              <div className="flex items-center gap-2 mb-1.5">
-                <span className="bg-blue-600 text-white px-2 py-0.5 rounded-full font-bold text-xs">01</span>
-                <h3 className="font-display text-sm font-bold text-ink uppercase">Bangladesh: Nổi Dậy Sinh Viên (2024)</h3>
-              </div>
-              <div className="space-y-0.5">
-                <div>
-                  <h4 className="font-bold text-blue-700 mb-0.5 uppercase text-xs">Nguyên Nhân</h4>
-                  <p className="text-graphite/80 text-xs leading-tight">
-                    Biểu tình phản đối hạn ngạch việc làm, bùng phát thành phong trào đòi Thủ tướng Sheikh Hasina từ chức.
-                  </p>
-                </div>
-                <div>
-                  <h4 className="font-bold text-blue-700 mb-0.5 uppercase text-xs">Vai Trò Thanh Niên</h4>
-                  <p className="text-graphite/80 text-xs leading-tight">
-                    Sinh viên là lực lượng nòng cốt, tổ chức qua mạng xã hội, đối đầu trực diện với lực lượng an ninh.
-                  </p>
+            <motion.div
+              initial={{ opacity: 0, x: -30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              className="bg-white border-4 border-ink shadow-hard-lg overflow-hidden"
+            >
+              {/* Case Header */}
+              <div className="bg-blue-600 text-white px-6 py-4 flex items-center justify-between">
+                <div className="flex items-center gap-4">
+                  <span className="w-10 h-10 bg-white text-blue-600 rounded-full flex items-center justify-center font-black text-lg border-2 border-blue-800">01</span>
+                  <div>
+                    <h3 className="font-display text-xl md:text-2xl font-black uppercase tracking-tight">Bangladesh</h3>
+                    <p className="font-mono text-xs text-blue-100 uppercase tracking-widest">Phong trào "Students Against Discrimination" — 2024</p>
+                  </div>
                 </div>
               </div>
-              <div className="bg-blue-50 p-2 border-2 border-blue-200 rounded-lg mt-1.5">
-                <h4 className="font-bold text-blue-800 mb-0.5 uppercase text-xs">Hiện Tại (5/2026)</h4>
-                <ul className="space-y-0.25 text-xs text-graphite/80 list-disc list-inside">
-                  <li>Cải cách hiến pháp, tái cấu trúc định chế</li>
-                  <li className="text-crimson font-semibold">⚠️ Bất ổn vẫn còn</li>
-                </ul>
+              {/* Case Content */}
+              <div className="grid md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-ink/10">
+                <div className="p-6">
+                  <h4 className="font-mono font-bold text-blue-700 uppercase tracking-widest text-xs mb-3 flex items-center gap-2">
+                    <span className="w-2 h-2 bg-blue-600 rounded-full"></span>
+                    Nguyên Nhân
+                  </h4>
+                  <p className="text-graphite/80 text-sm leading-relaxed">
+                    Phản đối hệ thống hạn ngạch (quota) công chức dành 30% vị trí cho con cháu những người có công trong cuộc chiến giành độc lập 1971, gây ra sự bất công trong tìm kiếm việc làm của giới trẻ.
+                  </p>
+                </div>
+                <div className="p-6">
+                  <h4 className="font-mono font-bold text-blue-700 uppercase tracking-widest text-xs mb-3 flex items-center gap-2">
+                    <span className="w-2 h-2 bg-blue-600 rounded-full"></span>
+                    Vai Trò Thanh Niên
+                  </h4>
+                  <p className="text-graphite/80 text-sm leading-relaxed">
+                    Khởi xướng và lãnh đạo toàn bộ phong trào. Họ sử dụng mạng xã hội để kết nối, huy động hàng triệu người xuống đường và biến một yêu sách giáo dục thành phong trào đòi thay đổi thể chế.
+                  </p>
+                </div>
+                <div className="p-6 bg-blue-50/50">
+                  <h4 className="font-mono font-bold text-blue-700 uppercase tracking-widest text-xs mb-3 flex items-center gap-2">
+                    <span className="w-2 h-2 bg-blue-600 rounded-full"></span>
+                    Kết Quả
+                  </h4>
+                  <p className="text-graphite/80 text-sm leading-relaxed">
+                    Thủ tướng Sheikh Hasina phải từ chức và rời khỏi đất nước vào tháng 8/2024. Một chính phủ lâm thời được thành lập với sự tham gia của các đại diện sinh viên để chuẩn bị cho quá trình chuyển đổi.
+                  </p>
+                </div>
               </div>
-            </div>
+            </motion.div>
 
             {/* Case 2: Sri Lanka */}
-            <div className="bg-white border-t-8 border-t-orange-600 p-2.5 shadow-hard">
-              <div className="flex items-center gap-2 mb-1.5">
-                <span className="bg-orange-600 text-white px-2 py-0.5 rounded-full font-bold text-xs">02</span>
-                <h3 className="font-display text-sm font-bold text-ink uppercase">Sri Lanka: "Aragalaya" (2022)</h3>
-              </div>
-              <div className="space-y-0.5">
-                <div>
-                  <h4 className="font-bold text-orange-700 mb-0.5 uppercase text-xs">Nguyên Nhân</h4>
-                  <p className="text-graphite/80 text-xs leading-tight">
-                    Khủng hoảng kinh tế tồi tệ nhất, thiếu lương thực, nhiên liệu, thuốc men.
-                  </p>
-                </div>
-                <div>
-                  <h4 className="font-bold text-orange-700 mb-0.5 uppercase text-xs">Vai Trò Thanh Niên</h4>
-                  <p className="text-graphite/80 text-xs leading-tight">
-                    Gen Z dẫn đầu cắm trại dài ngày Colombo, tạo sức ép buộc Rajapaksa phải tháo chạy.
-                  </p>
+            <motion.div
+              initial={{ opacity: 0, x: 30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              className="bg-white border-4 border-ink shadow-hard-lg overflow-hidden"
+            >
+              {/* Case Header */}
+              <div className="bg-orange-600 text-white px-6 py-4 flex items-center justify-between">
+                <div className="flex items-center gap-4">
+                  <span className="w-10 h-10 bg-white text-orange-600 rounded-full flex items-center justify-center font-black text-lg border-2 border-orange-800">02</span>
+                  <div>
+                    <h3 className="font-display text-xl md:text-2xl font-black uppercase tracking-tight">Sri Lanka</h3>
+                    <p className="font-mono text-xs text-orange-100 uppercase tracking-widest">Phong trào "Aragalaya" — 2022</p>
+                  </div>
                 </div>
               </div>
-              <div className="bg-orange-50 p-2 border-2 border-orange-200 rounded-lg mt-1.5">
-                <h4 className="font-bold text-orange-800 mb-0.5 uppercase text-xs">Hiện Tại (5/2026)</h4>
-                <ul className="space-y-0.25 text-xs text-graphite/80 list-disc list-inside">
-                  <li>Ổn định chính trị dần</li>
-                  <li className="text-crimson font-semibold">⚠️ Thách thức nhiều</li>
-                </ul>
+              {/* Case Content */}
+              <div className="grid md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-ink/10">
+                <div className="p-6">
+                  <h4 className="font-mono font-bold text-orange-700 uppercase tracking-widest text-xs mb-3 flex items-center gap-2">
+                    <span className="w-2 h-2 bg-orange-600 rounded-full"></span>
+                    Nguyên Nhân
+                  </h4>
+                  <p className="text-graphite/80 text-sm leading-relaxed">
+                    Khủng hoảng kinh tế tồi tệ nhất lịch sử khiến quốc gia vỡ nợ, thiếu hụt nghiêm trọng nhu yếu phẩm (xăng dầu, thực phẩm, thuốc men), lạm phát phi mã và tình trạng tham nhũng, quản lý yếu kém của gia tộc cầm quyền Rajapaksa.
+                  </p>
+                </div>
+                <div className="p-6">
+                  <h4 className="font-mono font-bold text-orange-700 uppercase tracking-widest text-xs mb-3 flex items-center gap-2">
+                    <span className="w-2 h-2 bg-orange-600 rounded-full"></span>
+                    Vai Trò Thanh Niên
+                  </h4>
+                  <p className="text-graphite/80 text-sm leading-relaxed">
+                    Là lực lượng nòng cốt và tiên phong khởi xướng. Thanh niên đã thiết lập khu trại biểu tình "Gota Go Gama", sử dụng mạng xã hội để điều phối các cuộc xuống đường quy mô lớn và duy trì sức ép liên tục trong nhiều tháng.
+                  </p>
+                </div>
+                <div className="p-6 bg-orange-50/50">
+                  <h4 className="font-mono font-bold text-orange-700 uppercase tracking-widest text-xs mb-3 flex items-center gap-2">
+                    <span className="w-2 h-2 bg-orange-600 rounded-full"></span>
+                    Kết Quả
+                  </h4>
+                  <p className="text-graphite/80 text-sm leading-relaxed">
+                    Lật đổ chính quyền cũ; buộc Thủ tướng Mahinda Rajapaksa (tháng 5/2022) và Tổng thống Gotabaya Rajapaksa (tháng 7/2022) phải từ chức và tháo chạy. Phong trào đã tạo tiền đề cho sự thay đổi hệ thống chính trị về sau.
+                  </p>
+                </div>
               </div>
-            </div>
+            </motion.div>
 
-            {/* Case 3: Kazakhstan */}
-            <div className="bg-white border-t-8 border-t-yellow-600 p-2.5 shadow-hard">
-              <div className="flex items-center gap-2 mb-1.5">
-                <span className="bg-yellow-600 text-white px-2 py-0.5 rounded-full font-bold text-xs">03</span>
-                <h3 className="font-display text-sm font-bold text-ink uppercase">Kazakhstan: "Tháng Giêng" (2022)</h3>
-              </div>
-              <div className="space-y-0.5">
-                <div>
-                  <h4 className="font-bold text-yellow-700 mb-0.5 uppercase text-xs">Nguyên Nhân</h4>
-                  <p className="text-graphite/80 text-xs leading-tight">
-                    Giá nhiên liệu tăng vọt, bất mãn bất bình đẳng kinh tế.
-                  </p>
-                </div>
-                <div>
-                  <h4 className="font-bold text-yellow-700 mb-0.5 uppercase text-xs">Diễn Biến</h4>
-                  <p className="text-graphite/80 text-xs leading-tight">
-                    Biểu tình biến thành bạo động. Tokayev yêu cầu CSTO can thiệp dập tắt.
-                  </p>
+            {/* Case 3: Thiên An Môn */}
+            <motion.div
+              initial={{ opacity: 0, x: -30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              className="bg-white border-4 border-ink shadow-hard-lg overflow-hidden"
+            >
+              {/* Case Header */}
+              <div className="bg-red-700 text-white px-6 py-4 flex items-center justify-between">
+                <div className="flex items-center gap-4">
+                  <span className="w-10 h-10 bg-white text-red-700 rounded-full flex items-center justify-center font-black text-lg border-2 border-red-900">03</span>
+                  <div>
+                    <h3 className="font-display text-xl md:text-2xl font-black uppercase tracking-tight">Trung Quốc</h3>
+                    <p className="font-mono text-xs text-red-200 uppercase tracking-widest">Sự kiện Thiên An Môn — 1989</p>
+                  </div>
                 </div>
               </div>
-              <div className="bg-yellow-50 p-2 border-2 border-yellow-200 rounded-lg mt-1.5">
-                <h4 className="font-bold text-yellow-800 mb-0.5 uppercase text-xs">Hiện Tại (5/2026)</h4>
-                <ul className="space-y-0.25 text-xs text-graphite/80 list-disc list-inside">
-                  <li>Tokayev củng cố quyền lực</li>
-                  <li className="text-crimson font-semibold">⚠️ Vấn đề cốt lõi</li>
-                </ul>
-              </div>
-            </div>
-
-            {/* Case 4: Myanmar */}
-            <div className="bg-white border-t-8 border-t-red-600 p-2.5 shadow-hard">
-              <div className="flex items-center gap-2 mb-1.5">
-                <span className="bg-red-600 text-white px-2 py-0.5 rounded-full font-bold text-xs">04</span>
-                <h3 className="font-display text-sm font-bold text-ink uppercase">Myanmar: Khủng Hoảng (2021-Nay)</h3>
-              </div>
-              <div className="space-y-0.5">
-                <div>
-                  <h4 className="font-bold text-red-700 mb-0.5 uppercase text-xs">Nguyên Nhân</h4>
-                  <p className="text-graphite/80 text-xs leading-tight">
-                    Quân đội lật đổ chính phủ dân cử Aung San Suu Kyi.
+              {/* Case Content */}
+              <div className="grid md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-ink/10">
+                <div className="p-6">
+                  <h4 className="font-mono font-bold text-red-700 uppercase tracking-widest text-xs mb-3 flex items-center gap-2">
+                    <span className="w-2 h-2 bg-red-700 rounded-full"></span>
+                    Nguyên Nhân
+                  </h4>
+                  <p className="text-graphite/80 text-sm leading-relaxed">
+                    Khởi nguồn từ sự thương tiếc sau cái chết của ông Hồ Diệu Bang (một lãnh đạo cải cách). Sinh viên đòi hỏi chính phủ cải cách dân chủ, tự do báo chí và đặc biệt là chống tham nhũng, bất bình đẳng xã hội do tác động của cải cách kinh tế.
                   </p>
                 </div>
-                <div>
-                  <h4 className="font-bold text-red-700 mb-0.5 uppercase text-xs">Vai Trò Thanh Niên</h4>
-                  <p className="text-graphite/80 text-xs leading-tight">
-                    Gen Z tiên phong CDM, sau gia nhập PDF kháng chiến vũ trang.
+                <div className="p-6">
+                  <h4 className="font-mono font-bold text-red-700 uppercase tracking-widest text-xs mb-3 flex items-center gap-2">
+                    <span className="w-2 h-2 bg-red-700 rounded-full"></span>
+                    Vai Trò Thanh Niên
+                  </h4>
+                  <p className="text-graphite/80 text-sm leading-relaxed">
+                    Là lực lượng nòng cốt và tiên phong. Sinh viên các trường đại học lớn tại Bắc Kinh đã tổ chức biểu tình quy mô lớn, tuyệt thực tại quảng trường và dựng tượng "Nữ thần Dân chủ" để thu hút sự chú ý của thế giới.
+                  </p>
+                </div>
+                <div className="p-6 bg-red-50/50">
+                  <h4 className="font-mono font-bold text-red-700 uppercase tracking-widest text-xs mb-3 flex items-center gap-2">
+                    <span className="w-2 h-2 bg-red-700 rounded-full"></span>
+                    Kết Quả
+                  </h4>
+                  <p className="text-graphite/80 text-sm leading-relaxed">
+                    Chính phủ Trung Quốc quyết định dùng biện pháp mạnh. Đêm 3/6, rạng sáng 4/6/1989, quân đội can thiệp để giải tán đám đông, dẫn đến xung đột bạo lực và thương vong lớn. Phong trào bị dập tắt hoàn toàn.
                   </p>
                 </div>
               </div>
-              <div className="bg-red-50 p-2 border-2 border-red-200 rounded-lg mt-1.5">
-                <h4 className="font-bold text-red-800 mb-0.5 uppercase text-xs">Hiện Tại (5/2026)</h4>
-                <ul className="space-y-0.25 text-xs text-graphite/80 list-disc list-inside">
-                  <li className="text-crimson font-semibold">🔴 Nội chiến khốc liệt</li>
-                  <li className="ml-4">Khủng hoảng nhân đạo</li>
-                </ul>
-              </div>
-            </div>
-
-
+            </motion.div>
           </div>
 
           {/* Key Takeaway - Full Width */}
-          <div className="bg-crimson/10 border-l-8 border-l-crimson p-3">
-            <h3 className="font-display text-base font-bold text-crimson uppercase mb-1.5">📌 Bài Học Chính</h3>
-            <div className="space-y-1 text-graphite/80 text-xs">
+          <div className="mt-10 bg-bone p-6 md:p-8 border-4 border-ink border-l-8 border-l-crimson shadow-hard-lg">
+            <h3 className="font-display text-xl font-bold text-crimson uppercase mb-4 flex items-center gap-3">
+              📌 Bài Học Rút Ra
+            </h3>
+            <div className="space-y-3 text-graphite text-sm leading-relaxed">
               <p>
-                <strong>Thanh niên CÓ vai trò nòng cốt</strong> nhưng kết quả không lúc nào chắc chắn tích cực.
+                <strong className="text-ink">Thanh niên luôn là lực lượng nòng cốt</strong> trong mọi biến động chính trị — nhưng kết quả của phong trào không bao giờ chắc chắn tích cực.
               </p>
               <p>
-                <strong>Vấn đề:</strong> Phong trào thiếu lãnh đạo rõ ràng → dẫn tới bất ổn kinh tế, xung đột, nội chiến.
+                <strong className="text-crimson">Vấn đề cốt lõi:</strong> Phong trào thiếu lãnh đạo rõ ràng, bị chi phối bởi cảm xúc hoặc bị thế lực bên ngoài lợi dụng → dẫn tới bất ổn chính trị, suy thoái kinh tế, thậm chí xung đột bạo lực.
               </p>
               <p>
-                <strong>Yêu cầu thanh niên Việt Nam:</strong> Không chỉ "lực lượng xung kích" mà phải có <em>tri thức vững vàng, bản lĩnh chính trị</em> để phân biệt <em>làm chủ thực sự</em> với <em>bị dẫn dắt</em>.
+                <strong className="text-ink">Yêu cầu đối với thanh niên Việt Nam:</strong> Không chỉ là{" "}
+                <em>"lực lượng xung kích"</em> mà phải có{" "}
+                <em className="text-crimson font-semibold">tri thức vững vàng, bản lĩnh chính trị</em>{" "}
+                để phân biệt <em className="text-ink font-semibold">làm chủ thực sự</em> với{" "}
+                <em className="text-crimson font-semibold">bị dẫn dắt</em>.
               </p>
             </div>
           </div>

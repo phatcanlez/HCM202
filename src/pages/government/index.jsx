@@ -15,7 +15,7 @@ const TheoricBasisPage = () => {
   return (
     <div className="page-shell w-full bg-bone selection:bg-ink selection:text-gold snap-container">
       {/* SECTION 1: HEADER */}
-      <Section className="items-center justify-center pt-32 px-4 md:px-10 border-b-2 border-ink bg-bone">
+      <Section className="items-center justify-center pt-32 px-4 md:px-10 border-b-2 border-ink bg-sand">
         <div className="flex flex-col items-center justify-center space-y-8 max-w-5xl mx-auto w-full relative z-10">
           {/* Top Label Box */}
           <motion.div
@@ -79,7 +79,7 @@ const TheoricBasisPage = () => {
       {/* SECTION 2: HỒ CHÍ MINH'S THOUGHTS ON STATE */}
       <Section
         scrollable={true}
-        className="items-center justify-center px-4 md:px-10 bg-white"
+        className="items-center justify-center px-4 md:px-10 bg-tea"
       >
         <div className="max-w-screen-2xl mx-auto w-full py-16">
           <div className="grid md:grid-cols-2 gap-16 items-center">
@@ -180,7 +180,10 @@ const TheoricBasisPage = () => {
       </Section>
 
       {/* SECTION 3: YOUTH'S ROLE AND POLITICAL FOUNDATION */}
-      <Section className="items-center justify-center pt-8 px-4 md:px-10 bg-sand border-b-2 border-ink">
+      <Section
+        scrollable={true}
+        className="items-center justify-center pt-8 px-4 md:px-10 bg-sand border-b-2 border-ink"
+      >
         <div className="max-w-screen-2xl mx-auto w-full py-4">
           <div className="text-center mb-5">
             <motion.div
@@ -202,9 +205,9 @@ const TheoricBasisPage = () => {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-3">
+          <div className="grid md:grid-cols-2 gap-3 ">
             {/* Require 1 */}
-            <Card variant="default" hoverEffect className="p-3 border-t-8 border-t-blue-600">
+            <Card variant="default" hoverEffect className="p-3 border-t-8 border-t-blue-600 bg-bone">
               <div className="w-14 h-14 bg-blue-100 rounded-lg flex items-center justify-center mb-3 border-2 border-blue-600 shadow-[4px_4px_0px_0px_#2563EB]">
                 <span className="font-display font-black text-xl text-blue-600">01</span>
               </div>
@@ -285,7 +288,7 @@ const TheoricBasisPage = () => {
             </Card>
 
             {/* Require 4 */}
-            <Card variant="default" hoverEffect className="p-3 border-t-8 border-t-green-600">
+            <Card variant="default" hoverEffect className="p-3 border-t-8 border-t-green-600 bg-bone">
               <div className="w-14 h-14 bg-green-100 rounded-lg flex items-center justify-center mb-3 border-2 border-green-600 shadow-[4px_4px_0px_0px_#16A34A]">
                 <span className="font-display font-black text-xl text-green-600">04</span>
               </div>

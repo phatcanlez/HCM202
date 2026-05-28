@@ -243,7 +243,7 @@ const LessonPage = () => {
             </Section>
 
             {/* SECTION 4: SPECIFIC GUIDANCE */}
-            <Section className="items-center justify-center px-4 md:px-10 bg-white border-b-2 border-ink">
+            <Section className="items-center justify-center px-4 md:px-10 bg-sand border-b-2 border-ink">
                 <div className="max-w-screen-2xl mx-auto w-full py-16">
                     <div className="text-center mb-16">
                         <motion.div

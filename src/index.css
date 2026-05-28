@@ -16,6 +16,7 @@
   --color-graphite: #333333;
   --color-sand: #f5e6c8;
   --color-void: #050505;
+  --color-tea: #fffbf0;
 
   /* SHADOWS (Hard Shadows) */
   --shadow-hard-sm: 2px 2px 0px 0px var(--color-ink);
@@ -29,6 +30,7 @@
   --animate-float: float 6s ease-in-out infinite;
 
   @keyframes float {
+
     0%,
     100% {
       transform: translateY(0);
@@ -149,6 +151,7 @@ body {
     opacity: 0;
     transform: translateY(20px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -159,6 +162,7 @@ body {
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
