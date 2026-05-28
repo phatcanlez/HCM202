@@ -78,7 +78,7 @@ const tools = [
   {
     category: "RESEARCH & DATA",
     name: "Nghiên cứu & Tổng hợp",
-    tools: ["ChatGPT 5", "NotebookLM"],
+    tools: ["Gemini", "NotebookLM"],
     icon: Search,
     description: [
       "Phân tích, đối chiếu quan điểm giáo trình & văn kiện Đảng.",
@@ -93,7 +93,7 @@ const tools = [
   {
     category: "WEB DEVELOPMENT",
     name: "Xây dựng Website",
-    tools: ["Gemini Advanced"],
+    tools: ["Claude Code", "Antigravity"],
     icon: Layout,
     description: [
       "Generate code UI React/Tailwind.",
