@@ -5,11 +5,7 @@ import {
 } from "../../components/ui/KineticText";
 import Section from "../../components/layout/Section";
 import Card from "../../components/ui/Card";
-import {
-  ArrowDown,
-  CheckCircle,
-  RefreshCw,
-} from "lucide-react";
+import { ArrowDown, CheckCircle, RefreshCw } from "lucide-react";
 
 const TheoricBasisPage = () => {
   return (
@@ -57,11 +53,11 @@ const TheoricBasisPage = () => {
             className="bg-white border-4 border-crimson p-6 md:p-8 shadow-hard-lg max-w-2xl transform -rotate-1 mt-8 relative"
           >
             <p className="font-body text-xl md:text-2xl text-ink text-center font-medium italic">
-              "Nhà nước{" "}
+              "Thanh niên trong thời đại truyền thông:{"  "}
               <span className="bg-crimson/10 px-1 font-bold text-crimson not-italic">
-                của dân, do dân, vì dân
-              </span>
-              "
+                làm chủ hay bị thao túng
+              </span>{" "}
+              ?"
             </p>
           </motion.div>
 
@@ -99,7 +95,8 @@ const TheoricBasisPage = () => {
                       <strong className="block text-ink">
                         Nhà nước CỦA dân:
                       </strong>
-                      Quyền lực thuộc về Nhân dân. Địa vị cao nhất là dân, vì dân là chủ.
+                      Quyền lực thuộc về Nhân dân. Địa vị cao nhất là dân, vì
+                      dân là chủ.
                     </div>
                   </li>
                   <li className="flex gap-4 items-start">
@@ -111,7 +108,8 @@ const TheoricBasisPage = () => {
                       <strong className="block text-ink">
                         Nhà nước DO dân:
                       </strong>
-                      Do chính Nhân dân lập nên, tổ chức nên, dựa vào lực lượng của Nhân dân.
+                      Do chính Nhân dân lập nên, tổ chức nên, dựa vào lực lượng
+                      của Nhân dân.
                     </div>
                   </li>
                   <li className="flex gap-4 items-start">
@@ -123,7 +121,8 @@ const TheoricBasisPage = () => {
                       <strong className="block text-ink">
                         Nhà nước VÌ dân:
                       </strong>
-                      Phục vụ lợi ích và nguyện vọng chính đáng của Nhân dân, không có đặc quyền.
+                      Phục vụ lợi ích và nguyện vọng chính đáng của Nhân dân,
+                      không có đặc quyền.
                     </div>
                   </li>
                 </ul>
@@ -136,7 +135,9 @@ const TheoricBasisPage = () => {
                 <span className="text-crimson">Quyền Làm Chủ</span>
               </h2>
               <p className="text-xl text-graphite/80 leading-relaxed font-body">
-                Nhân dân thực hiện quyền làm chủ trực tiếp và gián tiếp đối với Nhà nước. Nhân dân có quyền kiểm soát Nhà nước, bãi miễn đại biểu không xứng đáng.
+                Nhân dân thực hiện quyền làm chủ trực tiếp và gián tiếp đối với
+                Nhà nước. Nhân dân có quyền kiểm soát Nhà nước, bãi miễn đại
+                biểu không xứng đáng.
               </p>
 
               <div className="bg-paper p-8 border-l-8 border-l-crimson border-y-2 border-r-2 border-ink shadow-hard-md text-base">
@@ -169,7 +170,8 @@ const TheoricBasisPage = () => {
 
                   <div className="mt-4 pt-4 border-t border-ink/20">
                     <p className="text-lg font-bold text-ink text-center">
-                      "Nếu Chính phủ làm hại dân thì dân có quyền đuổi Chính phủ."
+                      "Nếu Chính phủ làm hại dân thì dân có quyền đuổi Chính
+                      phủ."
                     </p>
                   </div>
                 </div>
@@ -201,21 +203,29 @@ const TheoricBasisPage = () => {
               <span className="text-crimson">Của Thanh Niên</span>
             </h2>
             <p className="font-body text-sm md:text-base text-graphite/70 max-w-3xl mx-auto">
-              "Chủ tịch Hồ Chí Minh đặc biệt gửi gắm niềm tin vào thế hệ trẻ. Thanh niên phải là lực lượng xung kích trong xây dựng đất nước."
+              "Chủ tịch Hồ Chí Minh đặc biệt gửi gắm niềm tin vào thế hệ trẻ.
+              Thanh niên phải là lực lượng xung kích trong xây dựng đất nước."
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-3 ">
             {/* Require 1 */}
-            <Card variant="default" hoverEffect className="p-3 border-t-8 border-t-blue-600 bg-bone">
+            <Card
+              variant="default"
+              hoverEffect
+              className="p-3 border-t-8 border-t-blue-600 bg-bone"
+            >
               <div className="w-14 h-14 bg-blue-100 rounded-lg flex items-center justify-center mb-3 border-2 border-blue-600 shadow-[4px_4px_0px_0px_#2563EB]">
-                <span className="font-display font-black text-xl text-blue-600">01</span>
+                <span className="font-display font-black text-xl text-blue-600">
+                  01
+                </span>
               </div>
               <h3 className="font-display text-lg font-bold mb-2 uppercase text-ink">
                 Nhận Thức Đúng
               </h3>
               <p className="text-base text-graphite/80 mb-3">
-                Nâng cao bản lĩnh chính trị thông qua việc học tập tư tưởng Hồ Chí Minh, kiên định ý thức và trách nhiệm công dân.
+                Nâng cao bản lĩnh chính trị thông qua việc học tập tư tưởng Hồ
+                Chí Minh, kiên định ý thức và trách nhiệm công dân.
               </p>
               <ul className="space-y-1 text-graphite/70">
                 <li className="flex items-start gap-2">
@@ -234,15 +244,22 @@ const TheoricBasisPage = () => {
             </Card>
 
             {/* Require 2 */}
-            <Card variant="default" hoverEffect className="p-3 border-t-8 border-t-ember bg-bone">
+            <Card
+              variant="default"
+              hoverEffect
+              className="p-3 border-t-8 border-t-ember bg-bone"
+            >
               <div className="w-14 h-14 bg-ember/20 rounded-lg flex items-center justify-center mb-3 border-2 border-ember shadow-[4px_4px_0px_0px_#FF5500]">
-                <span className="font-display font-black text-xl text-ember">02</span>
+                <span className="font-display font-black text-xl text-ember">
+                  02
+                </span>
               </div>
               <h3 className="font-display text-lg font-bold mb-2 uppercase text-ink">
                 Trau Dồi Năng Lực
               </h3>
               <p className="text-sm text-graphite/80 mb-2">
-                Rèn luyện năng lực tư duy, học tập để giải quyết yêu cầu đa dạng của cuộc sống.
+                Rèn luyện năng lực tư duy, học tập để giải quyết yêu cầu đa dạng
+                của cuộc sống.
               </p>
               <ul className="space-y-0.5 text-sm text-graphite/70">
                 <li className="flex items-start gap-2">
@@ -261,9 +278,15 @@ const TheoricBasisPage = () => {
             </Card>
 
             {/* Require 3 */}
-            <Card variant="default" hoverEffect className="p-3 border-t-8 border-t-purple-600 bg-bone">
+            <Card
+              variant="default"
+              hoverEffect
+              className="p-3 border-t-8 border-t-purple-600 bg-bone"
+            >
               <div className="w-14 h-14 bg-purple-100 rounded-lg flex items-center justify-center mb-3 border-2 border-purple-600 shadow-[4px_4px_0px_0px_#9333EA]">
-                <span className="font-display font-black text-xl text-purple-600">03</span>
+                <span className="font-display font-black text-xl text-purple-600">
+                  03
+                </span>
               </div>
               <h3 className="font-display text-lg font-bold mb-2 uppercase text-ink">
                 Rèn Luyện Đạo Đức
@@ -288,15 +311,22 @@ const TheoricBasisPage = () => {
             </Card>
 
             {/* Require 4 */}
-            <Card variant="default" hoverEffect className="p-3 border-t-8 border-t-green-600 bg-bone">
+            <Card
+              variant="default"
+              hoverEffect
+              className="p-3 border-t-8 border-t-green-600 bg-bone"
+            >
               <div className="w-14 h-14 bg-green-100 rounded-lg flex items-center justify-center mb-3 border-2 border-green-600 shadow-[4px_4px_0px_0px_#16A34A]">
-                <span className="font-display font-black text-xl text-green-600">04</span>
+                <span className="font-display font-black text-xl text-green-600">
+                  04
+                </span>
               </div>
               <h3 className="font-display text-lg font-bold mb-2 uppercase text-ink">
                 Khát Vọng Cống Hiến
               </h3>
               <p className="text-sm text-graphite/80 mb-2">
-                Nỗ lực hôm nay là để xây dựng đất nước giàu mạnh, văn minh vào ngày mai.
+                Nỗ lực hôm nay là để xây dựng đất nước giàu mạnh, văn minh vào
+                ngày mai.
               </p>
               <ul className="space-y-0.5 text-sm text-graphite/70">
                 <li className="flex items-start gap-2">
@@ -316,7 +346,6 @@ const TheoricBasisPage = () => {
           </div>
         </div>
       </Section>
-
     </div>
   );
 };
