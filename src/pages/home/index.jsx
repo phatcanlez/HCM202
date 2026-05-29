@@ -217,7 +217,7 @@ const HomePage = () => {
       </Section>
 
       {/* SECTION 2.5: MINH HỌA BẰNG HÌNH ẢNH */}
-      <Section className="items-center justify-center px-4 md:px-10 bg-cream border-y border-brown/20">
+      <Section className="items-center justify-center px-4 md:px-10 bg-cream border-y border-brown/20" scrollable={true}>
         <div className="max-w-screen-2xl mx-auto w-full py-16">
           <div className="text-center mb-12 space-y-4">
             <motion.div
@@ -230,14 +230,6 @@ const HomePage = () => {
                 Ví Dụ Minh Họa
               </span>
             </motion.div>
-            <h2 className="text-3xl md:text-5xl font-display font-bold text-brown uppercase leading-tight">
-              Đưa vào bài nói
-            </h2>
-            <p className="text-lg text-brown/70 max-w-4xl mx-auto font-body">
-              Đoạn này có thể dùng như một khúc minh họa để làm rõ mâu thuẫn
-              giữa “làm chủ” và “bị dẫn dắt” trong các biến động chính trị - xã
-              hội.
-            </p>
           </div>
 
           <div className="grid lg:grid-cols-2 gap-8 items-stretch">
