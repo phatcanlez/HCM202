@@ -34,7 +34,7 @@ const HomePage = () => {
       <Section className="items-center justify-center pt-32 pb-20 border-b border-brown/20 bg-beige min-h-screen">
         <div className="absolute inset-0 home-hero-overlay pointer-events-none mix-blend-multiply opacity-10" />
         <div className="absolute inset-0 opacity-[0.02] floating-words font-display uppercase text-[12rem] leading-none break-all overflow-hidden pointer-events-none select-none text-red-muted">
-          SOCIALIST SPIRIT
+          Ho Chi Minh Ideology
         </div>
 
         <div className="max-w-screen-2xl mx-auto w-full grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center z-10 relative">
