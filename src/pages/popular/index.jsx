@@ -263,44 +263,51 @@ const ApplicationBasisPage = () => {
               viewport={{ once: true }}
               className="bg-white border-4 border-ink shadow-hard-lg overflow-hidden"
             >
-              {/* Case Header */}
-              <div className="bg-blue-600 text-white px-6 py-4 flex items-center justify-between">
-                <div className="flex items-center gap-4">
-                  <span className="w-10 h-10 bg-white text-blue-600 rounded-full flex items-center justify-center font-black text-lg border-2 border-blue-800">01</span>
-                  <div>
-                    <h3 className="font-display text-xl md:text-2xl font-black uppercase tracking-tight">Bangladesh</h3>
-                    <p className="font-mono text-xs text-blue-100 uppercase tracking-widest">Phong trào "Students Against Discrimination" — 2024</p>
+              <div className="grid md:grid-cols-2 gap-0">
+                {/* Image Section - Left */}
+                <div className="bg-blue-600 text-white flex flex-col p-6 md:p-8 justify-center items-center">
+                  <div className="w-full">
+                    <div className="flex items-center gap-3 mb-4">
+                      <span className="w-10 h-10 bg-white text-blue-600 rounded-full flex items-center justify-center font-black text-lg border-2 border-blue-800">01</span>
+                      <h3 className="font-display text-2xl md:text-3xl font-black uppercase tracking-tight">Bangladesh</h3>
+                    </div>
+                    <img
+                      src="https://www.aljazeera.com/wp-content/uploads/2024/08/AFP__20240803__369B8YZ__v1__HighRes__BangladeshUnrestStudentsProtest-1722682322.jpg?resize=1920%2C1080"
+                      alt="Bangladesh - Phong trào Students Against Discrimination 2024"
+                      className="w-full object-cover rounded-lg shadow-lg mb-4 border-4 border-white"
+                    />
+                    <p className="font-mono text-xs text-blue-100 uppercase tracking-widest text-center">Phong trào "Students Against Discrimination" — 2024</p>
                   </div>
                 </div>
-              </div>
-              {/* Case Content */}
-              <div className="grid md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-ink/10">
-                <div className="p-6">
-                  <h4 className="font-mono font-bold text-blue-700 uppercase tracking-widest text-xs mb-3 flex items-center gap-2">
-                    <span className="w-2 h-2 bg-blue-600 rounded-full"></span>
-                    Nguyên Nhân
-                  </h4>
-                  <p className="text-graphite/80 text-sm leading-relaxed">
-                    Phản đối hệ thống hạn ngạch (quota) công chức dành 30% vị trí cho con cháu những người có công trong cuộc chiến giành độc lập 1971, gây ra sự bất công trong tìm kiếm việc làm của giới trẻ.
-                  </p>
-                </div>
-                <div className="p-6">
-                  <h4 className="font-mono font-bold text-blue-700 uppercase tracking-widest text-xs mb-3 flex items-center gap-2">
-                    <span className="w-2 h-2 bg-blue-600 rounded-full"></span>
-                    Vai Trò Thanh Niên
-                  </h4>
-                  <p className="text-graphite/80 text-sm leading-relaxed">
-                    Khởi xướng và lãnh đạo toàn bộ phong trào. Họ sử dụng mạng xã hội để kết nối, huy động hàng triệu người xuống đường và biến một yêu sách giáo dục thành phong trào đòi thay đổi thể chế.
-                  </p>
-                </div>
-                <div className="p-6 bg-blue-50/50">
-                  <h4 className="font-mono font-bold text-blue-700 uppercase tracking-widest text-xs mb-3 flex items-center gap-2">
-                    <span className="w-2 h-2 bg-blue-600 rounded-full"></span>
-                    Kết Quả
-                  </h4>
-                  <p className="text-graphite/80 text-sm leading-relaxed">
-                    Thủ tướng Sheikh Hasina phải từ chức và rời khỏi đất nước vào tháng 8/2024. Một chính phủ lâm thời được thành lập với sự tham gia của các đại diện sinh viên để chuẩn bị cho quá trình chuyển đổi.
-                  </p>
+                {/* Content Section - Right */}
+                <div className="divide-y">
+                  <div className="p-6">
+                    <h4 className="font-mono font-bold text-blue-700 uppercase tracking-widest text-xs mb-3 flex items-center gap-2">
+                      <span className="w-2 h-2 bg-blue-600 rounded-full"></span>
+                      Nguyên Nhân
+                    </h4>
+                    <p className="text-graphite/80 text-sm leading-relaxed">
+                      Phản đối hệ thống hạn ngạch (quota) công chức dành 30% vị trí cho con cháu những người có công trong cuộc chiến giành độc lập 1971, gây ra sự bất công trong tìm kiếm việc làm của giới trẻ.
+                    </p>
+                  </div>
+                  <div className="p-6">
+                    <h4 className="font-mono font-bold text-blue-700 uppercase tracking-widest text-xs mb-3 flex items-center gap-2">
+                      <span className="w-2 h-2 bg-blue-600 rounded-full"></span>
+                      Vai Trò Thanh Niên
+                    </h4>
+                    <p className="text-graphite/80 text-sm leading-relaxed">
+                      Khởi xướng và lãnh đạo toàn bộ phong trào. Họ sử dụng mạng xã hội để kết nối, huy động hàng triệu người xuống đường và biến một yêu sách giáo dục thành phong trào đòi thay đổi thể chế.
+                    </p>
+                  </div>
+                  <div className="p-6 bg-blue-50/50">
+                    <h4 className="font-mono font-bold text-blue-700 uppercase tracking-widest text-xs mb-3 flex items-center gap-2">
+                      <span className="w-2 h-2 bg-blue-600 rounded-full"></span>
+                      Kết Quả
+                    </h4>
+                    <p className="text-graphite/80 text-sm leading-relaxed">
+                      Thủ tướng Sheikh Hasina phải từ chức và rời khỏi đất nước vào tháng 8/2024. Một chính phủ lâm thời được thành lập với sự tham gia của các đại diện sinh viên để chuẩn bị cho quá trình chuyển đổi.
+                    </p>
+                  </div>
                 </div>
               </div>
             </motion.div>
@@ -312,44 +319,52 @@ const ApplicationBasisPage = () => {
               viewport={{ once: true }}
               className="bg-white border-4 border-ink shadow-hard-lg overflow-hidden"
             >
-              {/* Case Header */}
-              <div className="bg-orange-600 text-white px-6 py-4 flex items-center justify-between">
-                <div className="flex items-center gap-4">
-                  <span className="w-10 h-10 bg-white text-orange-600 rounded-full flex items-center justify-center font-black text-lg border-2 border-orange-800">02</span>
-                  <div>
-                    <h3 className="font-display text-xl md:text-2xl font-black uppercase tracking-tight">Sri Lanka</h3>
-                    <p className="font-mono text-xs text-orange-100 uppercase tracking-widest">Phong trào "Aragalaya" — 2022</p>
+              <div className="grid md:grid-cols-2 gap-0">
+                {/* Content Section - Left */}
+                <div className="divide-y order-2 md:order-1">
+                  <div className="p-6">
+                    <h4 className="font-mono font-bold text-orange-700 uppercase tracking-widest text-xs mb-3 flex items-center gap-2">
+                      <span className="w-2 h-2 bg-orange-600 rounded-full"></span>
+                      Nguyên Nhân
+                    </h4>
+                    <p className="text-graphite/80 text-sm leading-relaxed">
+                      Khủng hoảng kinh tế tồi tệ nhất lịch sử khiến quốc gia vỡ nợ, thiếu hụt nghiêm trọng nhu yếu phẩm (xăng dầu, thực phẩm, thuốc men), lạm phát phi mã và tình trạng tham nhũng, quản lý yếu kém của gia tộc cầm quyền Rajapaksa.
+                    </p>
+                  </div>
+                  <div className="p-6">
+                    <h4 className="font-mono font-bold text-orange-700 uppercase tracking-widest text-xs mb-3 flex items-center gap-2">
+                      <span className="w-2 h-2 bg-orange-600 rounded-full"></span>
+                      Vai Trò Thanh Niên
+                    </h4>
+                    <p className="text-graphite/80 text-sm leading-relaxed">
+                      Là lực lượng nòng cốt và tiên phong khởi xướng. Thanh niên đã thiết lập khu trại biểu tình "Gota Go Gama", sử dụng mạng xã hội để điều phối các cuộc xuống đường quy mô lớn và duy trì sức ép liên tục trong nhiều tháng.
+                    </p>
+                  </div>
+                  <div className="p-6 bg-orange-50/50">
+                    <h4 className="font-mono font-bold text-orange-700 uppercase tracking-widest text-xs mb-3 flex items-center gap-2">
+                      <span className="w-2 h-2 bg-orange-600 rounded-full"></span>
+                      Kết Quả
+                    </h4>
+                    <p className="text-graphite/80 text-sm leading-relaxed">
+                      Lật đổ chính quyền cũ; buộc Thủ tướng Mahinda Rajapaksa (tháng 5/2022) và Tổng thống Gotabaya Rajapaksa (tháng 7/2022) phải từ chức và tháo chạy. Phong trào đã tạo tiền đề cho sự thay đổi hệ thống chính trị về sau.
+                    </p>
                   </div>
                 </div>
-              </div>
-              {/* Case Content */}
-              <div className="grid md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-ink/10">
-                <div className="p-6">
-                  <h4 className="font-mono font-bold text-orange-700 uppercase tracking-widest text-xs mb-3 flex items-center gap-2">
-                    <span className="w-2 h-2 bg-orange-600 rounded-full"></span>
-                    Nguyên Nhân
-                  </h4>
-                  <p className="text-graphite/80 text-sm leading-relaxed">
-                    Khủng hoảng kinh tế tồi tệ nhất lịch sử khiến quốc gia vỡ nợ, thiếu hụt nghiêm trọng nhu yếu phẩm (xăng dầu, thực phẩm, thuốc men), lạm phát phi mã và tình trạng tham nhũng, quản lý yếu kém của gia tộc cầm quyền Rajapaksa.
-                  </p>
-                </div>
-                <div className="p-6">
-                  <h4 className="font-mono font-bold text-orange-700 uppercase tracking-widest text-xs mb-3 flex items-center gap-2">
-                    <span className="w-2 h-2 bg-orange-600 rounded-full"></span>
-                    Vai Trò Thanh Niên
-                  </h4>
-                  <p className="text-graphite/80 text-sm leading-relaxed">
-                    Là lực lượng nòng cốt và tiên phong khởi xướng. Thanh niên đã thiết lập khu trại biểu tình "Gota Go Gama", sử dụng mạng xã hội để điều phối các cuộc xuống đường quy mô lớn và duy trì sức ép liên tục trong nhiều tháng.
-                  </p>
-                </div>
-                <div className="p-6 bg-orange-50/50">
-                  <h4 className="font-mono font-bold text-orange-700 uppercase tracking-widest text-xs mb-3 flex items-center gap-2">
-                    <span className="w-2 h-2 bg-orange-600 rounded-full"></span>
-                    Kết Quả
-                  </h4>
-                  <p className="text-graphite/80 text-sm leading-relaxed">
-                    Lật đổ chính quyền cũ; buộc Thủ tướng Mahinda Rajapaksa (tháng 5/2022) và Tổng thống Gotabaya Rajapaksa (tháng 7/2022) phải từ chức và tháo chạy. Phong trào đã tạo tiền đề cho sự thay đổi hệ thống chính trị về sau.
-                  </p>
+                {/* Image Section - Right */}
+                <div className="bg-orange-600 text-white flex flex-col p-6 md:p-8 justify-center items-center order-1 md:order-2">
+                  <div className="w-full">
+                    <div className="flex items-center gap-3 mb-4">
+                      <span className="w-10 h-10 bg-white text-orange-600 rounded-full flex items-center justify-center font-black text-lg border-2 border-orange-800">02</span>
+                      <h3 className="font-display text-2xl md:text-3xl font-black uppercase tracking-tight">Sri Lanka</h3>
+                    </div>
+                    <img
+                      src="https://cloudfront-us-east-2.images.arcpublishing.com/reuters/OU7LPZMVCJIYFKZWYMRCQZ5OEQ.jpg"
+                      alt="Sri Lanka - Phong trào Aragalaya 2022"
+                      className=" object-cover rounded-lg shadow-lg mb-4 border-4 border-white"
+                      height="250"
+                    />
+                    <p className="font-mono text-xs text-orange-100 uppercase tracking-widest text-center">Phong trào "Aragalaya" — 2022</p>
+                  </div>
                 </div>
               </div>
             </motion.div>
@@ -361,44 +376,51 @@ const ApplicationBasisPage = () => {
               viewport={{ once: true }}
               className="bg-white border-4 border-ink shadow-hard-lg overflow-hidden"
             >
-              {/* Case Header */}
-              <div className="bg-red-700 text-white px-6 py-4 flex items-center justify-between">
-                <div className="flex items-center gap-4">
-                  <span className="w-10 h-10 bg-white text-red-700 rounded-full flex items-center justify-center font-black text-lg border-2 border-red-900">03</span>
-                  <div>
-                    <h3 className="font-display text-xl md:text-2xl font-black uppercase tracking-tight">Trung Quốc</h3>
-                    <p className="font-mono text-xs text-red-200 uppercase tracking-widest">Sự kiện Thiên An Môn — 1989</p>
+              <div className="grid md:grid-cols-2 gap-0">
+                {/* Image Section - Left */}
+                <div className="bg-red-700 text-white flex flex-col p-6 md:p-8 justify-center items-center">
+                  <div className="w-full">
+                    <div className="flex items-center gap-3 mb-4">
+                      <span className="w-10 h-10 bg-white text-red-700 rounded-full flex items-center justify-center font-black text-lg border-2 border-red-900">03</span>
+                      <h3 className="font-display text-2xl md:text-3xl font-black uppercase tracking-tight">Trung Quốc</h3>
+                    </div>
+                    <img
+                      src="https://ichef.bbci.co.uk/ace/ws/640/cpsprodpb/3B03/production/_96370151_gettyimages-166775244.jpg.webp"
+                      alt="Trung Quốc - Sự kiện Thiên An Môn 1989"
+                      className="w-full object-cover rounded-lg shadow-lg mb-4 border-4 border-white"
+                    />
+                    <p className="font-mono text-xs text-red-200 uppercase tracking-widest text-center">Sự kiện Thiên An Môn — 1989</p>
                   </div>
                 </div>
-              </div>
-              {/* Case Content */}
-              <div className="grid md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-ink/10">
-                <div className="p-6">
-                  <h4 className="font-mono font-bold text-red-700 uppercase tracking-widest text-xs mb-3 flex items-center gap-2">
-                    <span className="w-2 h-2 bg-red-700 rounded-full"></span>
-                    Nguyên Nhân
-                  </h4>
-                  <p className="text-graphite/80 text-sm leading-relaxed">
-                    Khởi nguồn từ sự thương tiếc sau cái chết của ông Hồ Diệu Bang (một lãnh đạo cải cách). Sinh viên đòi hỏi chính phủ cải cách dân chủ, tự do báo chí và đặc biệt là chống tham nhũng, bất bình đẳng xã hội do tác động của cải cách kinh tế.
-                  </p>
-                </div>
-                <div className="p-6">
-                  <h4 className="font-mono font-bold text-red-700 uppercase tracking-widest text-xs mb-3 flex items-center gap-2">
-                    <span className="w-2 h-2 bg-red-700 rounded-full"></span>
-                    Vai Trò Thanh Niên
-                  </h4>
-                  <p className="text-graphite/80 text-sm leading-relaxed">
-                    Là lực lượng nòng cốt và tiên phong. Sinh viên các trường đại học lớn tại Bắc Kinh đã tổ chức biểu tình quy mô lớn, tuyệt thực tại quảng trường và dựng tượng "Nữ thần Dân chủ" để thu hút sự chú ý của thế giới.
-                  </p>
-                </div>
-                <div className="p-6 bg-red-50/50">
-                  <h4 className="font-mono font-bold text-red-700 uppercase tracking-widest text-xs mb-3 flex items-center gap-2">
-                    <span className="w-2 h-2 bg-red-700 rounded-full"></span>
-                    Kết Quả
-                  </h4>
-                  <p className="text-graphite/80 text-sm leading-relaxed">
-                    Chính phủ Trung Quốc quyết định dùng biện pháp mạnh. Đêm 3/6, rạng sáng 4/6/1989, quân đội can thiệp để giải tán đám đông, dẫn đến xung đột bạo lực và thương vong lớn. Phong trào bị dập tắt hoàn toàn.
-                  </p>
+                {/* Content Section - Right */}
+                <div className="divide-y">
+                  <div className="p-6">
+                    <h4 className="font-mono font-bold text-red-700 uppercase tracking-widest text-xs mb-3 flex items-center gap-2">
+                      <span className="w-2 h-2 bg-red-700 rounded-full"></span>
+                      Nguyên Nhân
+                    </h4>
+                    <p className="text-graphite/80 text-sm leading-relaxed">
+                      Khởi nguồn từ sự thương tiếc sau cái chết của ông Hồ Diệu Bang (một lãnh đạo cải cách). Sinh viên đòi hỏi chính phủ cải cách dân chủ, tự do báo chí và đặc biệt là chống tham nhũng, bất bình đẳng xã hội do tác động của cải cách kinh tế.
+                    </p>
+                  </div>
+                  <div className="p-6">
+                    <h4 className="font-mono font-bold text-red-700 uppercase tracking-widest text-xs mb-3 flex items-center gap-2">
+                      <span className="w-2 h-2 bg-red-700 rounded-full"></span>
+                      Vai Trò Thanh Niên
+                    </h4>
+                    <p className="text-graphite/80 text-sm leading-relaxed">
+                      Là lực lượng nòng cốt và tiên phong. Sinh viên các trường đại học lớn tại Bắc Kinh đã tổ chức biểu tình quy mô lớn, tuyệt thực tại quảng trường và dựng tượng "Nữ thần Dân chủ" để thu hút sự chú ý của thế giới.
+                    </p>
+                  </div>
+                  <div className="p-6 bg-red-50/50">
+                    <h4 className="font-mono font-bold text-red-700 uppercase tracking-widest text-xs mb-3 flex items-center gap-2">
+                      <span className="w-2 h-2 bg-red-700 rounded-full"></span>
+                      Kết Quả
+                    </h4>
+                    <p className="text-graphite/80 text-sm leading-relaxed">
+                      Chính phủ Trung Quốc quyết định dùng biện pháp mạnh. Đêm 3/6, rạng sáng 4/6/1989, quân đội can thiệp để giải tán đám đông, dẫn đến xung đột bạo lực và thương vong lớn. Phong trào bị dập tắt hoàn toàn.
+                    </p>
+                  </div>
                 </div>
               </div>
             </motion.div>
